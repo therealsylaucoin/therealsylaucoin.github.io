@@ -1,0 +1,54 @@
+// Font!
+// font-family: 'Roboto', sans-serif;
+// Weight: 300, 400
+
+//Colours
+$yellow: #fffd47;
+$pink: #ff32af;
+
+header, 
+main {
+    background-color: black;
+}
+
+h1,
+h2, 
+p,
+a {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+
+li {
+    list-style: none;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.imgContainer {
+    background-image: url(../assets/headshot.jpg);
+    background-size: cover;
+    height: 500px;
+    flex: 1 0 400px;
+    display: block;
+}
+
+.imgContainer:hover {
+    background-image: url(../assets/headshotHover.jpg);
+}
+
+.socialIcons {
+    color: $pink;
+    flex: 1 0 150px;
+}
+
