@@ -246,6 +246,39 @@ html * {
   max-width: 1400px;
 }
 
+.heading {
+  font-size: 6rem;
+  letter-spacing: 6px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+.heading--stroke {
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FF5CD9;
+  -moz-text-stroke-color: #FF5CD9;
+  color: transparent;
+}
+
+.heading--shadow {
+  text-shadow: 5px 1px #fffd47;
+}
+
+.heading-color:after {
+  background-color: #fffd47;
+}
+
+.logo__word {
+  font-size: 50px;
+  letter-spacing: 6px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #FF5CD9;
+  font-weight: 300;
+}
+
 header,
 main {
   background-color: black;
@@ -253,11 +286,14 @@ main {
 
 h1,
 h2,
-p,
-a {
+p {
   font-family: 'Roboto', sans-serif;
   color: white;
   font-weight: 300;
+}
+
+a {
+  color: #FFCAE9;
 }
 
 li {
@@ -301,7 +337,7 @@ li {
 }
 
 .socialIcons {
-  color: #ff32af;
+  color: #FF5CD9;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 150px;
           flex: 1 0 150px;
