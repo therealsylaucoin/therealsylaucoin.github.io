@@ -1,0 +1,112 @@
+// Font!
+// font-family: 'Roboto', sans-serif;
+// weight: 300, 400, 900
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1280px;
+}
+
+// Font!
+// font-family: 'Roboto', sans-serif;
+// weight: 300, 400, 900
+
+$pink: #FF206E;
+$yellow: #FBFF12;
+$teal: #41EAD4;
+$black: #0C0F0A;
+$grey: #333333;
+$white: #FFFFFF;
+$font: 'Roboto', sans-serif;
+
+
+
+main {
+    background-color: $black;
+}
+
+h1, 
+a {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+
+i,
+a {
+	color: $teal;
+}
+
+
+@mixin stroke-width($property) {
+	-webkit-text-stroke-width: $property;
+	-moz-text-stroke-width: $property;
+}
+
+@mixin stroke-color($property) {
+	-webkit-text-stroke-color: $property;
+	-moz-text-stroke-color: $property;
+}
+
+.heading {
+	font-size: 8rem;
+	letter-spacing: 6px;
+    margin: 0;
+    font-family: $font;
+    font-weight: 900;
+
+	&--stroke {
+		@include stroke-width(2px);
+		@include stroke-color($pink);
+		color: transparent;
+	}
+
+	&--shadow {
+		text-shadow: 5px 1px $yellow;
+    }
+    
+		&-color {
+			&:after {
+				background-color: $yellow;
+			}
+		}
+}
+
+.logo__word {
+    font-size: 50px;
+	letter-spacing: 6px;
+    margin: 0;
+    font-family: $font;
+    color: $pink;
+    font-weight: 300;
+    // text-shadow: -0.1rem -0.1rem 0.3rem $pink,
+    // 0.1rem 0.1rem 0.3rem $pink,
+}
