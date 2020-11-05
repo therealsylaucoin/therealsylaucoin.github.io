@@ -29,10 +29,15 @@ main {
 }
 
 .logo {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
     width: auto;
     margin: 0 auto;
 }
+
+
 
 li {
     display: inline-block;

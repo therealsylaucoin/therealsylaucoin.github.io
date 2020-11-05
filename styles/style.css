@@ -322,7 +322,8 @@ a {
 .logo__word {
   font-size: 50px;
   letter-spacing: 6px;
-  margin: 0;
+  margin-left: 10px;
+  margin-bottom: 5px;
   font-family: "Roboto", sans-serif;
   color: #FF206E;
   font-weight: 300;
@@ -368,7 +369,17 @@ main {
 }
 
 .logo {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: auto;
   margin: 0 auto;
 }
