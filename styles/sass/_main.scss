@@ -1,26 +1,5 @@
 main {
-    background-color: black;
-}
-
-h1
-{
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-weight: 300;
-    padding: 20px;
-    size: 2rem;
-}
-
-a {
-    color: $teal;
-}
-
-li {
-    list-style: none;
-}
-
-main {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -28,19 +7,63 @@ main {
     justify-content: center;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    width: auto;
-    margin: 0 auto;
+h1 {
+    font-family: $font;
+    color: $white;
+    font-weight: 400;
+    padding: 20px;
+    font-size: 3rem;
 }
 
-
+a {
+    color: $purpleLight;
+    font-size: 2.2rem;
+    :hover {
+        color: $yellow;
+        transform: scale(1.5);
+    }
+}
 
 li {
     display: inline-block;
     padding: 10px;
 }
+
+body.lightMode {
+    background-image: linear-gradient(rgba(241, 242, 238, 0.8)), url(../assets/lightBg.jpg);
+
+    h1 {
+        color: $black;
+    }
+
+    i, a {
+        color: $purple;
+
+        &:hover {
+            color: $green;
+        }
+    }
+
+    .heading {
+    
+        &--stroke {
+            @include stroke-color($purple);
+        }
+    
+        &--shadow {
+            text-shadow: 5px 1px $green;
+        }
+        
+            &-color {
+                &:after {
+                    background-color: $green;
+                }
+            }
+    }
+    
+    .logo__word {
+        color: $purple;
+    }
+}
+
 
