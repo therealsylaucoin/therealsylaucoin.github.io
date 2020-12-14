@@ -18,7 +18,7 @@
 }
 
 //Portfolio section
-//Images
+//Individual Images
 .monsterImg {
     background-image: url(../assets/portfolio/monster1.png);
 }
@@ -26,65 +26,62 @@
     background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/monster2.png);
 }
 
-
-
 .obliqueImg {
     background-image: url(../assets/portfolio/oblique1.png);
-    &:hover {
-        background-image: url(../assets/portfolio/oblique2.png)
-    }
+}
+.obliqueDetails {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/oblique2.png);
 }
 
 .sportImg {
     background-image: url(../assets/portfolio/sport1.png);
-    &:hover {
-        background-image: url(../assets/portfolio/sport2.png)
-    }
+}
+.sportDetails {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/sport2.png);
 }
 
 .haikuImg {
     background-image: url(../assets/portfolio/haiku1.png);
-    &:hover {
-        background-image: url(../assets/portfolio/haiku2.png)
-    }
+}
+.haikuDetails {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/haiku2.png);
 }
 
 .shoeImg {
     background-image: url(../assets/portfolio/shoeKloset1.png);
-    &:hover {
-        background-image: url(../assets/portfolio/shoeKloset2.png)
-    }
+}
+.shoeDetails {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/shoeKloset2.png);
 }
 
-.monsterImg, .monsterDetails,
-.obliqueImg,
-.sportImg,
-.haikuImg,
-.shoeImg {
+
+//For all images/projects
+.img,
+.details {
     height: 400px;
     width: 400px;
     background-size: cover;
     background-position: center;
 }
 
-.portfolio {
-    li {
-        display: flex;
-    }
+.img {
+    display: flex;
+    position: relative;
+}
+
+.details {
+    display:none;
+}
+
+.visible {
+    display: block;
+    position: absolute;
 }
 
 
 
 
-// .monsterDetails {
-//     // display: none;
-//     background-image: url(../assets/portfolio/monster2.png);
 
 
-//         // &:hover {
-//         //     z-index:10;
-//         //     display: block;
-//         //     background-color: red;
-//         // }
-// }
+
 

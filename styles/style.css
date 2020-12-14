@@ -270,13 +270,38 @@ img {
 }
 
 header {
-  background-image: url(../assets/backgroundHeader.png);
-  height: 100vh;
-  background-size: cover;
-  background-position: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-header ul {
+header .headerLeft,
+header .headerRight {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+header .headerLeft {
+  width: 60vw;
+  background-image: url(../assets/backgroundHeaderLeft.png);
+  position: relative;
+}
+
+header .headerLeft p {
+  position: absolute;
+  top: 200px;
+  right: 10px;
+}
+
+header .headerRight {
+  width: 40vw;
+  min-width: 475px;
+  background-image: url(../assets/backgroundHeaderRight.png);
+  position: relative;
+}
+
+header .headerRight ul {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -287,13 +312,29 @@ header ul {
           justify-content: flex-end;
 }
 
-header ul li {
+header .headerRight ul li {
   padding: 5px 10px;
   margin: 20px 10px;
 }
 
-header ul li a {
+header .headerRight ul li a {
   color: #0c0f0a;
+}
+
+header .headerRight .headerText {
+  position: absolute;
+  top: 212px;
+  left: 10px;
+}
+
+header i {
+  font-size: 4rem;
+}
+
+header i:hover {
+  color: #F9E900;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .heading {
@@ -320,31 +361,13 @@ header ul li a {
   background-color: #F9E900;
 }
 
-.logo__word {
-  font-size: 5.5rem;
+.logoWord {
+  font-size: 7rem;
   letter-spacing: 6px;
-  margin-left: 10px;
-  margin-bottom: 5px;
   font-family: "Poppins", sans-serif;
   color: #0A1045;
   font-weight: 700;
-}
-
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: auto;
-  margin: 0 auto;
-  margin-top: -100px;
+  margin: 0;
 }
 
 .aboutContainer {
@@ -387,47 +410,58 @@ header ul li a {
   background-image: url(../assets/portfolio/oblique1.png);
 }
 
-.obliqueImg:hover {
-  background-image: url(../assets/portfolio/oblique2.png);
+.obliqueDetails {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8))), url(../assets/portfolio/oblique2.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/oblique2.png);
 }
 
 .sportImg {
   background-image: url(../assets/portfolio/sport1.png);
 }
 
-.sportImg:hover {
-  background-image: url(../assets/portfolio/sport2.png);
+.sportDetails {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8))), url(../assets/portfolio/sport2.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/sport2.png);
 }
 
 .haikuImg {
   background-image: url(../assets/portfolio/haiku1.png);
 }
 
-.haikuImg:hover {
-  background-image: url(../assets/portfolio/haiku2.png);
+.haikuDetails {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8))), url(../assets/portfolio/haiku2.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/haiku2.png);
 }
 
 .shoeImg {
   background-image: url(../assets/portfolio/shoeKloset1.png);
 }
 
-.shoeImg:hover {
-  background-image: url(../assets/portfolio/shoeKloset2.png);
+.shoeDetails {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8))), url(../assets/portfolio/shoeKloset2.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/shoeKloset2.png);
 }
 
-.monsterImg, .monsterDetails,
-.obliqueImg,
-.sportImg,
-.haikuImg,
-.shoeImg {
+.img,
+.details {
   height: 400px;
   width: 400px;
   background-size: cover;
   background-position: center;
 }
 
-.portfolio li {
+.img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+}
+
+.details {
+  display: none;
+}
+
+.visible {
+  display: block;
+  position: absolute;
 }
