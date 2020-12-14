@@ -245,18 +245,14 @@ html {
   max-width: 1280px;
 }
 
-* {
-  padding: 0;
-  margin: 0;
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 15, 10, 0.8))), url(../assets/darkBg.jpg);
-  background-image: linear-gradient(rgba(12, 15, 10, 0.8)), url(../assets/darkBg.jpg);
-  background-size: cover;
-  background-position: center;
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -273,44 +269,55 @@ img {
   display: block;
 }
 
-h1 {
-  font-family: "Roboto", sans-serif;
-  color: #f1f2ee;
-  font-weight: 300;
+header {
+  background-image: url(../assets/backgroundHeader.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: right;
 }
 
-i,
-a {
-  color: #A67DB8;
+header ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-i:hover,
-a:hover {
-  color: #DCF763;
+header ul li {
+  padding: 5px 10px;
+  margin: 20px 10px;
+}
+
+header ul li a {
+  color: #0c0f0a;
 }
 
 .heading {
   font-size: 8rem;
   letter-spacing: 6px;
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 .heading--stroke {
   -webkit-text-stroke-width: 2px;
   -moz-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #A67DB8;
-  -moz-text-stroke-color: #A67DB8;
+  -webkit-text-stroke-color: #0A1045;
+  -moz-text-stroke-color: #0A1045;
   color: transparent;
 }
 
 .heading--shadow {
-  text-shadow: 5px 1px #DCF763;
+  text-shadow: 5px 1px #F9E900;
 }
 
 .heading-color:after {
-  background-color: #DCF763;
+  background-color: #F9E900;
 }
 
 .logo__word {
@@ -318,9 +325,9 @@ a:hover {
   letter-spacing: 6px;
   margin-left: 10px;
   margin-bottom: 5px;
-  font-family: "Roboto", sans-serif;
-  color: #A67DB8;
-  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #0A1045;
+  font-weight: 700;
 }
 
 .logo {
@@ -340,83 +347,87 @@ a:hover {
   margin-top: -100px;
 }
 
-.switch {
-  padding: 30px;
-}
-
-main {
-  height: 90vh;
+.aboutContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+.skills ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.skills ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-h1 {
-  font-family: "Roboto", sans-serif;
-  color: #f1f2ee;
-  font-weight: 400;
-  padding: 20px;
-  font-size: 3rem;
+.monsterImg {
+  background-image: url(../assets/portfolio/monster1.png);
 }
 
-a {
-  color: #A67DB8;
-  font-size: 2.2rem;
+.monsterDetails {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8))), url(../assets/portfolio/monster2.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/monster2.png);
 }
 
-a :hover {
-  color: #DCF763;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+.obliqueImg {
+  background-image: url(../assets/portfolio/oblique1.png);
 }
 
-li {
-  display: inline-block;
-  padding: 10px;
+.obliqueImg:hover {
+  background-image: url(../assets/portfolio/oblique2.png);
 }
 
-body.lightMode {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(241, 242, 238, 0.8))), url(../assets/lightBg.jpg);
-  background-image: linear-gradient(rgba(241, 242, 238, 0.8)), url(../assets/lightBg.jpg);
+.sportImg {
+  background-image: url(../assets/portfolio/sport1.png);
 }
 
-body.lightMode h1 {
-  color: #0c0f0a;
+.sportImg:hover {
+  background-image: url(../assets/portfolio/sport2.png);
 }
 
-body.lightMode i, body.lightMode a {
-  color: #7261a3;
+.haikuImg {
+  background-image: url(../assets/portfolio/haiku1.png);
 }
 
-body.lightMode i:hover, body.lightMode a:hover {
-  color: #12664F;
+.haikuImg:hover {
+  background-image: url(../assets/portfolio/haiku2.png);
 }
 
-body.lightMode .heading--stroke {
-  -webkit-text-stroke-color: #7261a3;
-  -moz-text-stroke-color: #7261a3;
+.shoeImg {
+  background-image: url(../assets/portfolio/shoeKloset1.png);
 }
 
-body.lightMode .heading--shadow {
-  text-shadow: 5px 1px #12664F;
+.shoeImg:hover {
+  background-image: url(../assets/portfolio/shoeKloset2.png);
 }
 
-body.lightMode .heading-color:after {
-  background-color: #12664F;
+.monsterImg, .monsterDetails,
+.obliqueImg,
+.sportImg,
+.haikuImg,
+.shoeImg {
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
 }
 
-body.lightMode .logo__word {
-  color: #7261a3;
+.portfolio li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

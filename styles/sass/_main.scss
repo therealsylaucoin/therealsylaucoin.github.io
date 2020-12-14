@@ -1,69 +1,90 @@
-main {
-    height: 90vh;
+.aboutContainer {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-h1 {
-    font-family: $font;
-    color: $white;
-    font-weight: 400;
-    padding: 20px;
-    font-size: 3rem;
-}
+.skills {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        text-align: center;
 
-a {
-    color: $purpleLight;
-    font-size: 2.2rem;
-    :hover {
-        color: $yellow;
-        transform: scale(1.5);
-    }
-}
-
-li {
-    display: inline-block;
-    padding: 10px;
-}
-
-body.lightMode {
-    background-image: linear-gradient(rgba(241, 242, 238, 0.8)), url(../assets/lightBg.jpg);
-
-    h1 {
-        color: $black;
-    }
-
-    i, a {
-        color: $purple;
-
-        &:hover {
-            color: $green;
+        li {
+            display: flex;
+            flex-direction: column;
         }
     }
+}
 
-    .heading {
-    
-        &--stroke {
-            @include stroke-color($purple);
-        }
-    
-        &--shadow {
-            text-shadow: 5px 1px $green;
-        }
-        
-            &-color {
-                &:after {
-                    background-color: $green;
-                }
-            }
-    }
-    
-    .logo__word {
-        color: $purple;
+//Portfolio section
+//Images
+.monsterImg {
+    background-image: url(../assets/portfolio/monster1.png);
+}
+.monsterDetails {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/monster2.png);
+}
+
+
+
+.obliqueImg {
+    background-image: url(../assets/portfolio/oblique1.png);
+    &:hover {
+        background-image: url(../assets/portfolio/oblique2.png)
     }
 }
 
+.sportImg {
+    background-image: url(../assets/portfolio/sport1.png);
+    &:hover {
+        background-image: url(../assets/portfolio/sport2.png)
+    }
+}
+
+.haikuImg {
+    background-image: url(../assets/portfolio/haiku1.png);
+    &:hover {
+        background-image: url(../assets/portfolio/haiku2.png)
+    }
+}
+
+.shoeImg {
+    background-image: url(../assets/portfolio/shoeKloset1.png);
+    &:hover {
+        background-image: url(../assets/portfolio/shoeKloset2.png)
+    }
+}
+
+.monsterImg, .monsterDetails,
+.obliqueImg,
+.sportImg,
+.haikuImg,
+.shoeImg {
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio {
+    li {
+        display: flex;
+    }
+}
+
+
+
+
+// .monsterDetails {
+//     // display: none;
+//     background-image: url(../assets/portfolio/monster2.png);
+
+
+//         // &:hover {
+//         //     z-index:10;
+//         //     display: block;
+//         //     background-color: red;
+//         // }
+// }
 

@@ -1,19 +1,32 @@
-h1 {
-    font-family: $font;
-    color: $white;
-    font-weight: 300;
+header {
+	background-image: url(../assets/backgroundHeader.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: right;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: flex-end;
+
+
+		li {
+			padding: 5px 10px;
+			margin: 20px 10px;
+
+			a {
+				color: $black;
+			}
+		}
+	}
 }
+//Nav Styles
 
-i,
-a {
-    color: $purpleLight;
 
-    &:hover {
-        color: $yellow;
-    }
-}
 
-//SYL CODES STYLES
+
+//SYL CODES LOGO STYLES
 @mixin stroke-width($property) {
 	-webkit-text-stroke-width: $property;
 	-moz-text-stroke-width: $property;
@@ -28,12 +41,12 @@ a {
 	font-size: 8rem;
 	letter-spacing: 6px;
     margin: 0;
-    font-family: $font;
-    font-weight: 900;
+    font-family: $fontHeading;
+    font-weight: 700;
 
 	&--stroke {
 		@include stroke-width(2px);
-		@include stroke-color($purpleLight);
+		@include stroke-color($navy);
 		color: transparent;
 	}
 
@@ -53,11 +66,9 @@ a {
 	letter-spacing: 6px;
 	margin-left: 10px;
 	margin-bottom: 5px;
-    font-family: $font;
-    color: $purpleLight;
-    font-weight: 300;
-    // text-shadow: -0.1rem -0.1rem 0.3rem $pink,
-    // 0.1rem 0.1rem 0.3rem $pink,
+    font-family: $fontHeading;
+    color: $navy;
+    font-weight: 700;
 }
 
 .logo {
@@ -70,6 +81,7 @@ a {
     margin-top: -100px;
 }
 
-.switch {
-    padding: 30px;
-}
+//styles for the light/dark mode switch
+// .switch {
+//     padding: 30px;
+// }

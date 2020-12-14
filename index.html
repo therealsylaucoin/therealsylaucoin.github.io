@@ -4,54 +4,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" href="./assets/favicon.png" rel="icon">
     <title>Syl Codes</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/d8482cd430.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
 </head>
 
 <body>
 
     <header>
 
-        <div class="switch">
+        <!-- <div class="switch">
             <span id="modeSwitch"><i class="fas fa-adjust"></i></span>
-        </div>
+        </div> -->
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1>
+            <span class="logo__name heading heading--stroke heading--shadow">Syl</span> 
+            <span class="logo__word">Codes</span>
+        </h1>
+
+        <h2>I'm Syl.</h2>
+        <h2>Front End Developer.</h2>
 
     </header>
 
     <main>
-        
-        <div class="wrapper logo">
 
-            <p class="logo__name heading heading--stroke heading--shadow">Syl</p>
-            <p class="logo__word">Codes</p>
+        <section class="wrapper" id="about">
 
-        </div>
+            <h2>About me.</h2>
+            
+            <div class="aboutContainer">
+                
+                <div>
+                    <img src="./assets/headshot.jpg" alt="headshot of Syl">
+                </div>
+                
+            
+                <article>
 
-        <h1>Coming Soon</h1>
+                    <h3>Hi. I'm Syl.</h3>
+            
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quas aspernatur soluta nemo repudiandae sit minima? Quam, soluta nihil. Ex, eaque nihil beatae officiis, ipsam quidem eos eveniet saepe aspernatur quod deserunt sed alias, veritatis consequuntur quia dicta consequatur aliquam eum minima itaque a soluta? Voluptatem similique optio  optio ex debitis quidem fugit accusantium error cupiditate sit ut rem velit corrupti nam aliquam. </p>
+            
+                    <p>Repellendus blanditiis quas enim velit at et soluta asperiores consequatur nobis beatae. Facilis esse ipsam ipsum repudiandae aperiam odio consequuntur ut? Vero sunt dolores Eveniet nemo, ratione repellat explicabo, itaque unde libero sapiente, id perferendis omnis illo animi praesentium!</p>
+            
+                    <p>Sapiente cumque sit asperiores eveniet quas, vero, tempora atque nemo quibusdam quam consectetur deleniti modi eius. Sequi, nobis. Nulla ducimus non, corrupti ex repellendus i iusto tempora ratione esse voluptatem laborum aliquid consequatur iure at maiores eos nobis eveniet, quaerat voluptates sint repellendus hic quos neque? </p>
+            
+                    <button>Download my resume.</button>
+            
+                </article>
+            
+            </div>
 
-            <ul class="socialIcons">
+        </section>
 
+        <section class="skills wrapper" id="skills">
+
+            <h2>My skills.</h2>
+
+            <ul>
+                <li><i class="fab fa-html5"></i>HTML5</li>
+                <li><i class="fab fa-css3-alt"></i>CSS</li>
+                <li><i class="fab fa-sass"></i>SASS</li>
+                <li><i class="fab fa-js-square"></i>Javascript + ES6</li>
+                <li><i class="devicon-jquery-plain"></i>jQuery</li>
+                <li><i class="fas fa-database"></i>Firebase</li>
+                <li><i class="fas fa-terminal"></i>Terminal</li>
+                <li><i class="fab fa-git-alt"></i>Git</li>
+                <li><i class="fas fa-code"></i>REST Api</li>
+                <li><i class="fas fa-mobile-alt"></i>Responsive Design</li>
+                <li><i class="fas fa-universal-access"></i>Accessibility</li>
+
+            </ul>
+
+        </section>
+
+        <section class="portfolio wrapper" id="portfolio">
+
+            <h2>Portfolio</h2>
+
+            <ul>
+
+                <!-- Monster Mash project info -->
                 <li>
-                    <a href="https://twitter.com/sylaucoin" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <div class="monsterImg">
+                        <!-- portfolio img here / change on hover -->
+                    </div>
+
+                    <div class="monsterDetails">
+                        <h2>Monster Mash</h2>
+                        <p>A classic memory card matching game, which includes two modes (friendly and scary), three difficulty levels and a move counter.</p>
+
+                        <div>
+                            <p>Made with:</p>
+                            <ul>
+                                <li>jQuery</li>
+                                <li>Sass</li>
+                                <li>Html5</li>
+                            </ul>
+                        </div>
+
+                        <a href="https://themonstermash.netlify.app/" target="_blank" rel="noreferrer">Live</a>
+                        <a href="https://github.com/therealsylaucoin/monsterMash" target="_blank" rel="noreferrer">GitHub</a>
+                    
+                    </div>
+                </li>
+                
+                <!-- Oblique Strategies project info -->
+                <li>
+                    <div class="obliqueImg">
+                        <!-- portfolio img here / change on hover -->
+                    </div>
+
+                    <div class=obliqueDetails>
+                        <h2>Oblique Strategies</h2>
+                        <p>My take on Brian Eno's timeless lateral thinking deck, with the addition of a Collect Strategies deck where users can contribute.</p>
+
+                        <div>
+                            <p>Made with:</p>  
+                            <ul>
+                                <li>React</li>
+                                <li>REST api</li>
+                                <li>Firebase</li>
+                                <li>Sass</li>
+                                <li>Html</li>
+                            </ul>
+                        </div>
+
+                        <a href="" target="_blank" rel="noreferrer">Live</a>
+                        <a href="" target="_blank" rel="noreferrer">GitHub</a>
+                    
+                    </div>
                 </li>
 
+                <!-- Sport Spot project info -->
                 <li>
-                    <a href="https://www.linkedin.com/in/sylvieaucoin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="sportImg">
+                        <!-- portfolio img here / change on hover -->
+                    </div>
+
+                    <div>
+                        <h2>Sport Spot</h2>
+                        <p>Description</p>
+
+                        <div>
+                            <p>Made with:</p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+
+                        <a href="" target="_blank" rel="noreferrer">Live</a>
+                        <a href="" target="_blank" rel="noreferrer">GitHub</a>
+                    
+                    </div>
                 </li>
 
+                <!-- Haiku Ahoy project info -->
                 <li>
-                    <a href="https://github.com/therealsylaucoin" target="_blank"><i class="fab fa-github"></i></a>
+                    <div class="haikuImg">
+                        <!-- portfolio img here / change on hover -->
+                    </div>
+
+                    <div>
+                        <h2>Haiku Ahoy</h2>
+                        <p>Description</p>
+
+                        <div>
+                            <p>Made with:</p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+
+                        <a href="" target="_blank" rel="noreferrer">Live</a>
+                        <a href="" target="_blank" rel="noreferrer">GitHub</a>
+                    
+                    </div>
                 </li>
 
+                <!-- Shoe Kloset project info -->
                 <li>
-                    <a href="https://www.instagram.com/sylaucoin" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <div class="shoeImg">
+                        <!-- portfolio img here / change on hover -->
+                    </div>
+
+                    <div>
+                        <h2>Shoe Kloset</h2>
+                        <p>Description</p>
+
+                        <div>
+                            <p>Made with:</p> 
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+
+                        <a href="" target="_blank" rel="noreferrer">Live</a>
+                        <a href="" target="_blank" rel="noreferrer">GitHub</a>
+                    
+                    </div>
                 </li>
 
             </ul>
 
+        </section>
+
+        <section class="blog wrapper" id="blog">
+
+            <h2>Blog</h2>
+
+            <ul>
+                <li>Article One</li>
+                <li>Article Two</li>
+                <li>Article Three</li>
+            </ul>
+
+        </section>
+
+        <section class="contact wrapper" id="contact">
+
+            <h2>Contact me.</h2>
+
+            <p>Let's have a chat. Book some time with me via <a href="https://calendly.com/sylcodes/30min">Calendly</a>.</p>
+
+            <ul class="socialIcons">
+
+                <li>
+                    <a href="https://twitter.com/sylaucoin" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/sylvieaucoin" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/therealsylaucoin" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/sylaucoin" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+                </li>
+
+                <li>
+                    <a href="https://sylaucoin.medium.com/" target="_blank" rel="noreferrer"><i class="fab fa-medium-m"></i></a>
+                </li>
+
+            </ul>
+
+        </section>
+
     </main>
+
+    <footer>
+
+        <p>Made by Syl</p>
+
+    </footer>
 
 <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
 <script src="script.js"></script>
