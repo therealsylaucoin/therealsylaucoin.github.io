@@ -29,7 +29,7 @@
             <p class="heading heading--stroke heading--shadow">Syl</p>
 
             <div class="headshotContainer">
-                <img src="assets/headshotNoBgBnW.png">
+                <!-- Headshot goes here -->
             </div>
 
         </section>
@@ -41,7 +41,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                    <!-- <li><a href="#blog">Blog</a></li> -->
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -88,122 +88,291 @@
 
         </section>
 
+        <!-- Skills SECTION here! -->
         <section class="skills" id="skills" data-aos="fade-in" data-aos-duration="2000">
 
             <div class="title">Skills</div>
 
-            <!-- <p>Skills</p> -->
-
-            <h2>My skillset bla bla bla bla bla.</h2>
+            <h2>My toolkit includes:</h2>
 
             <ul class="wrapper">
-                <li><i class="fab fa-html5"></i></li>
-                <li><i class="fab fa-css3-alt"></i></li>
-                <li><i class="fab fa-sass"></i></li>
-                <li><i class="fab fa-js-square"></i></li>
-                <li><i class="devicon-jquery-plain"></i></li>
-                <li><i class="fas fa-database"></i></li>
-                <li><i class="fas fa-terminal"></i></li>
-                <li><i class="fab fa-git-alt"></i></li>
-                <li><i class="fas fa-code"></i></li>
-                <li><i class="fas fa-mobile-alt"></i></li>
-                <li><i class="fas fa-universal-access"></i></li>
+                <li><i class="fab fa-html5"></i>HTML</li>
+                <li><i class="fab fa-css3-alt"></i>CSS</li>
+                <li><i class="fab fa-sass"></i>SASS</li>
+                <li><i class="fab fa-js-square"></i>Javascript</li>
+                <li><i class="devicon-jquery-plain"></i>jQuery</li>
+                <li><i class="fas fa-database"></i>Firebase</li>
+                <li><i class="fas fa-terminal"></i>Terminal</li>
+                <li><i class="fab fa-git-alt"></i>Git</li>
+                <li><i class="fas fa-code"></i>REST Api</li>
+                <li><i class="fab fa-react"></i>React</li>
+                <li><i class="fas fa-mobile-alt"></i>Responsive Design</li>
+                <li><i class="fas fa-universal-access"></i>Accessibility</li>
+            </ul>
 
+            <h2>I'm currently working on adding:</h2>
+
+            <ul class="wrapper">
+                <li><i class="fab fa-vuejs"></i></i>Vue.js</li>
+                <li><i class="devicon-redux-original"></i>Redux</li>
             </ul>
 
         </section>
 
+        <!-- Portfolio SECTION here! -->
         <section class="portfolio" id="portfolio" data-aos="fade-in" data-aos-duration="2000">
 
             <div class="title">Portfolio</div>
 
-            <ul class="wrapper">
+            <ul class="wrapper projectList">
 
                 <!-- general project info -->
-                <li class="placeholder">
+                <li class="intro">
                     <h2>Some Projects</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex amet qui pariatur exercitationem enim sequi praesentium id laborum quo aperiam.</p>
+                    <p>Here are some projects that I made.</p>
                 </li>
 
-                <!-- Monster Mash project imgs-->
-                <li class="monsterImg img" data-id="0">
-                    <div class="monsterHover hover animate__animated"></div>
-                    <div class="details"></div>
+                <!-- Monster Mash project-->
+                <li class="monsterImg project">
+
+                    <div class="monsterHover hover animate__animated" data-name="monster"></div>
+
+                    <div class="details monsterDetails animate__animated animate__fadeOutDown">
+
+                        <div class="detailsTitle">
+                            <h3>Monster Mash</h3>
+                            <i class="fas fa-times" data-name="monster"></i>
+                        </div>
+
+                        <p>A classic memory card matching game, which includes two modes (friendly and scary), three
+                            difficulty levels and a move counter.</p>
+
+                        <ul>
+                            <li>jQuery</li>
+                            <li>SASS</li>
+                            <li>HTML</li>
+                        </ul>
+
+                        <ul class="links">
+                            <li>
+                                <a href="https://themonstermash.netlify.app/" target="_blank" rel="noreferrer">Live</a>
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/therealsylaucoin/monsterMash" target="_blank"
+                                    rel="noreferrer">github</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
                 </li>
 
-                <!-- Oblique Strategies project imgs -->
-                <li class="obliqueImg img" data-id="1">
-                    <div class="obliqueHover hover animate__animated"></div>
+                <!-- Oblique Strategies project  -->
+                <li class="obliqueImg project">
+
+                    <div class="obliqueHover hover animate__animated" data-name="oblique"></div>
+
+                    <div class="details obliqueDetails animate__animated animate__fadeOutDown">
+
+                        <div class="detailsTitle">
+                            <h3>Oblique Strategies</h3>
+                            <i class="fas fa-times" data-name="oblique"></i>
+                        </div>
+
+                        <p>A take on Brian Eno's timeless lateral thinking deck, with the addition of a Collect
+                            Strategies deck where users can contribute.</p>
+
+                        <ul>
+                            <li>React</li>
+                            <li>REST Api</li>
+                            <li>Firebase</li>
+                            <li>SASS</li>
+                            <li>HTML</li>
+                        </ul>
+
+                        <ul class="links">
+                            <li>
+                                <a href="" target="_blank" rel="noreferrer">Live</a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" rel="noreferrer">github</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
                 </li>
 
-                <!-- Sport Spot project imgs -->
-                <li class="sportImg img" data-id="2">
-                    <div class="sportHover hover animate__animated"></div>
+                <!-- Sport Spot project -->
+                <li class="sportImg project">
+
+                    <div class="sportHover hover animate__animated" data-name="sport"></div>
+
+                    <div class="details sportDetails animate__animated animate__fadeOutDown">
+
+                        <div class="detailsTitle">
+                            <h3>Sport Spot</h3>
+                            <i class="fas fa-times" data-name="sport"></i>
+                        </div>
+
+                        <p>Pair programming</p>
+
+                        <ul>
+                            <li>jQuery</li>
+                            <li>SASS</li>
+                            <li>HTML</li>
+                        </ul>
+
+                        <ul class="links">
+                            <li>
+                                <a href="" target="_blank" rel="noreferrer">Live</a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" rel="noreferrer">github</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
                 </li>
 
-                <!-- Haiku Ahoy project imgs -->
-                <li class="haikuImg img" data-id="3">
-                    <div class="haikuHover hover animate__animated"></div>
+                <!-- Haiku Ahoy project -->
+                <li class="haikuImg project">
+
+                    <div class="haikuHover hover animate__animated" data-name="haiku"></div>
+
+                    <div class="details haikuDetails animate__animated animate__fadeOutDown">
+
+                        <div class=detailsTitle>
+                            <h3>Haiku Ahoy</h3>
+                            <i class="fas fa-times" data-name="haiku"></i>
+                        </div>
+
+                        <p>Group project</p>
+
+                        <ul>
+                            <li>React</li>
+                            <li>REST Api</li>
+                            <li>Firebase</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ul>
+
+                        <ul class="links">
+                            <li>
+                                <a href="" target="_blank" rel="noreferrer">Live</a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" rel="noreferrer">github</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
                 </li>
 
-                <!-- Shoe Kloset project imgs -->
-                <li class="shoeImg img" data-id="4">
-                    <div class="shoeHover hover animate__animated"></div>
+                <!-- Shoe Kloset project  -->
+                <li class="shoeImg project">
+
+                    <div class="shoeHover hover animate__animated" data-name="shoe"></div>
+
+                    <div class="details shoeDetails animate__animated animate__fadeOutDown">
+
+                        <div class=detailsTitle>
+                            <h3>Shoe Kloset</h3>
+                            <i class="fas fa-times" data-name="shoe"></i>
+                        </div>
+
+                        <p>PSD conversion</p>
+
+                        <ul>
+                            <li>jQuery</li>
+                            <li>SASS</li>
+                            <li>HTML</li>
+                        </ul>
+
+                        <ul class="links">
+                            <li>
+                                <a href="" target="_blank" rel="noreferrer">Live</a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" rel="noreferrer">github</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
                 </li>
 
             </ul>
 
         </section>
 
-        <section class="blog wrapper" id="blog" data-aos="fade-in" data-aos-duration="2000">
+        <!-- Contact SECTION here! -->
+        <section class="contact" id="contact" data-aos="fade-in" data-aos-duration="2000">
 
-            <h2>Blog</h2>
+            <div class="title">Contact</div>
 
-            <p>link to medium here!</p>
+            <div class="flexContainer wrapper">
 
-            <ul>
-                <li>Article One</li>
-                <li>Article Two</li>
-                <li>Article Three</li>
-            </ul>
+                <h2>Get In Touch</h2>
 
-        </section>
+                <p>I'd love to connect with you! Let's have a chat. Book some time with me via <a href="https://calendly.com/sylcodes/30min">Calendly</a> or send me a message here. you can also find me on social media.
+                </p>
 
-        <section class="contact wrapper" id="contact" data-aos="fade-in" data-aos-duration="2000">
+                <section class="getInTouch">
 
-            <h2>Contact me.</h2>
+                    <ul class="socialIcons">
 
-            <p>Let's have a chat. Book some time with me via <a href="https://calendly.com/sylcodes/30min">Calendly</a>.
-            </p>
+                        <li>
+                            <a href="https://twitter.com/sylaucoin" target="_blank" rel="noreferrer"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
 
-            <ul class="socialIcons">
+                        <li>
+                            <a href="https://www.linkedin.com/in/sylvieaucoin" target="_blank" rel="noreferrer"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </li>
 
-                <li>
-                    <a href="https://twitter.com/sylaucoin" target="_blank" rel="noreferrer"><i
-                            class="fab fa-twitter"></i></a>
-                </li>
+                        <li>
+                            <a href="https://github.com/therealsylaucoin" target="_blank" rel="noreferrer"><i
+                                    class="fab fa-github"></i></a>
+                        </li>
 
-                <li>
-                    <a href="https://www.linkedin.com/in/sylvieaucoin" target="_blank" rel="noreferrer"><i
-                            class="fab fa-linkedin-in"></i></a>
-                </li>
+                        <li>
+                            <a href="https://www.instagram.com/sylaucoin" target="_blank" rel="noreferrer"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
 
-                <li>
-                    <a href="https://github.com/therealsylaucoin" target="_blank" rel="noreferrer"><i
-                            class="fab fa-github"></i></a>
-                </li>
+                        <li>
+                            <a href="https://sylaucoin.medium.com/" target="_blank" rel="noreferrer"><i
+                                    class="fab fa-medium-m"></i></a>
+                        </li>
 
-                <li>
-                    <a href="https://www.instagram.com/sylaucoin" target="_blank" rel="noreferrer"><i
-                            class="fab fa-instagram"></i></a>
-                </li>
+                    </ul>
 
-                <li>
-                    <a href="https://sylaucoin.medium.com/" target="_blank" rel="noreferrer"><i
-                            class="fab fa-medium-m"></i></a>
-                </li>
+                    <form action="https://formspree.io/f/mbjpzbgq" method="POST">
 
-            </ul>
+                        <div class="formInfo">
+
+                            <label for="name" class="srOnly">Your name</label>
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+
+                            <label for="email" class="srOnly">Your email</label>
+                            <input type="email" name="_replyto" id="email" placeholder="Email" required>
+
+                        </div>
+
+                        <label for="message" class="srOnly">Your message</label>
+                        <textarea name="message" id="message" placeholder="Message" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+
+                </section>
+
+            </div>
 
         </section>
 

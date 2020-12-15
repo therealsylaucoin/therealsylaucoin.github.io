@@ -1,0 +1,37 @@
+//Skills sections styles
+.skills {
+    background-color: $white;
+    padding-bottom: 100px;
+
+    .title {
+        align-self: flex-start;
+        margin-left: 200px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+
+        li {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            font-size: 1.6rem;
+
+            i {
+                font-size: 6rem;
+            }
+        }
+    }
+
+    ul:last-of-type {
+        color: $grey;
+    }
+}

@@ -1,0 +1,143 @@
+//Portfolio section
+.portfolio {
+    padding: 50px 0;
+    background-color: $yellow;
+
+    .projectList {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        padding: 10px 0;
+
+        .project {
+            overflow: hidden;
+        }
+
+        .intro,
+        .project,
+        .details {
+            margin: 10px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .intro, 
+        .details {
+            background-color: $white;
+            padding: 20px;
+        }
+    }
+
+    .title {
+        margin: 30px 200px;
+        padding-bottom: 50px;
+    }
+}
+
+.details {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    .detailsTitle {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li {
+        background-color: $black;
+        color: $white;
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.6rem;
+        border-radius: 5px;
+    }
+
+    .links li {
+        background-color: $white;
+        border: 2px solid $black;
+        padding: 10px;
+
+        &:hover {
+            background-color: $yellow;
+        }
+
+        a {
+            color: $black;
+            text-transform: uppercase;
+        }
+    }
+}
+
+//For all portfolio images
+.project,
+.hover {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.project {
+    position: relative;
+}
+
+.hover {
+    display:none;
+}
+
+.visible {
+    display: block;
+    position: absolute;
+}
+
+//Individual Images
+.monsterImg {
+    background-image: url(../assets/portfolio/monster1.png);
+}
+.monsterHover {
+    background-image: url(../assets/portfolio/monster2.png);
+}
+
+.obliqueImg {
+    background-image: url(../assets/portfolio/oblique1.png);
+}
+.obliqueHover {
+    background-image: url(../assets/portfolio/oblique2.png);
+}
+
+.sportImg {
+    background-image: url(../assets/portfolio/sport1.png);
+}
+.sportHover {
+    background-image: url(../assets/portfolio/sport2.png);
+}
+
+.haikuImg {
+    background-image: url(../assets/portfolio/haiku1.png);
+}
+.haikuHover {
+    background-image: url(../assets/portfolio/haiku2.png);
+}
+
+.shoeImg {
+    background-image: url(../assets/portfolio/shoe1.png);
+}
+.shoeHover {
+    background-image: url(../assets/portfolio/shoe2.png);
+}
