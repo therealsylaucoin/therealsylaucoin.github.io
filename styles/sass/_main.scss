@@ -1,8 +1,64 @@
-.aboutContainer {
+//general styling for ther main section!
+.about, .skills {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    padding: 50px 0;
 }
 
+.title {
+    position: relative;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.title::before {
+    position: absolute;
+    height: 2px;
+    width: 120px;
+    left: -130px;
+    top: 15px;
+    background-color: $grey;
+    content: '';
+}
+
+// About section styles
+.about {
+    color: $white;
+    background-color: $black;
+
+    h2 {
+        width: 50%;
+        margin: 30px auto;
+    }
+
+    button {
+        color: $black;
+        font-family: $font;
+        border: 2px solid transparent;
+        background-color: $grey;
+        padding: 20px;
+        margin: 30px 0;
+
+        &:hover {
+            color: $grey;
+            background-color: $black;
+            border: 2px solid $grey;
+        }
+    }
+}
+
+//Skills sections styles
 .skills {
+    background-color: $white;
+
+    .title {
+        align-self: flex-start;
+        margin-left: 200px;
+    }
+
     ul {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -11,55 +67,80 @@
         text-align: center;
 
         li {
-            display: flex;
-            flex-direction: column;
+            // background-color: $white;
+            width: 100px;
+            height: 100px;
+
+            i {
+                font-size: 5rem;
+            }
         }
     }
 }
 
 //Portfolio section
+.portfolio {
+    padding: 50px 0;
+    background-color: $yellow;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            margin: 10px;
+        }
+
+        .placeholder {
+            height: 380px;
+            width: 380px;
+            background-color: $white;
+        }
+    }
+}
+
 //Individual Images
 .monsterImg {
     background-image: url(../assets/portfolio/monster1.png);
 }
 .monsterDetails {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/monster2.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/monster2.png);
 }
 
 .obliqueImg {
     background-image: url(../assets/portfolio/oblique1.png);
 }
 .obliqueDetails {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/oblique2.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/oblique2.png);
 }
 
 .sportImg {
     background-image: url(../assets/portfolio/sport1.png);
 }
 .sportDetails {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/sport2.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/sport2.png);
 }
 
 .haikuImg {
     background-image: url(../assets/portfolio/haiku1.png);
 }
 .haikuDetails {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/haiku2.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/haiku2.png);
 }
 
 .shoeImg {
     background-image: url(../assets/portfolio/shoeKloset1.png);
 }
 .shoeDetails {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/shoeKloset2.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/shoeKloset2.png);
 }
 
 
 //For all images/projects
 .img,
 .details {
-    height: 400px;
-    width: 400px;
+    height: 380px;
+    width: 380px;
     background-size: cover;
     background-position: center;
 }

@@ -237,6 +237,7 @@ html {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -279,26 +280,35 @@ header .headerLeft,
 header .headerRight {
   height: 100vh;
   background-size: cover;
-  background-position: center;
 }
 
 header .headerLeft {
-  width: 60vw;
-  background-image: url(../assets/backgroundHeaderLeft.png);
+  width: 30vw;
+  min-width: 550px;
+  background-image: url(../assets/headerLeftMono.png);
   position: relative;
+  background-position: right;
 }
 
 header .headerLeft p {
   position: absolute;
   top: 200px;
   right: 10px;
+  z-index: 10;
+}
+
+header .headshotContainer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 header .headerRight {
-  width: 40vw;
-  min-width: 475px;
-  background-image: url(../assets/backgroundHeaderRight.png);
+  width: 70vw;
+  background-image: url(../assets/headerRightMono.png);
   position: relative;
+  background-position: left;
 }
 
 header .headerRight ul {
@@ -318,7 +328,7 @@ header .headerRight ul li {
 }
 
 header .headerRight ul li a {
-  color: #0c0f0a;
+  color: #000004;
 }
 
 header .headerRight .headerText {
@@ -327,12 +337,21 @@ header .headerRight .headerText {
   left: 10px;
 }
 
+header .headerRight .headerText h1 {
+  font-weight: 300;
+  margin: 10px;
+}
+
 header i {
+  margin-top: 20px;
+  margin-left: 5px;
   font-size: 4rem;
+  color: #000004;
 }
 
 header i:hover {
-  color: #F9E900;
+  color: #edff00;
+  text-shadow: 0px 0px 8px #BEBEC1;
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }
@@ -348,32 +367,97 @@ header i:hover {
 .heading--stroke {
   -webkit-text-stroke-width: 2px;
   -moz-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #0A1045;
-  -moz-text-stroke-color: #0A1045;
+  -webkit-text-stroke-color: #000004;
+  -moz-text-stroke-color: #000004;
   color: transparent;
 }
 
 .heading--shadow {
-  text-shadow: 5px 1px #F9E900;
+  text-shadow: 5px 1px #edff00;
 }
 
 .heading-color:after {
-  background-color: #F9E900;
+  background-color: #edff00;
 }
 
 .logoWord {
   font-size: 7rem;
   letter-spacing: 6px;
   font-family: "Poppins", sans-serif;
-  color: #0A1045;
+  color: #000004;
   font-weight: 700;
   margin: 0;
 }
 
-.aboutContainer {
+.about, .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.title {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 30px auto;
+}
+
+.title::before {
+  position: absolute;
+  height: 2px;
+  width: 120px;
+  left: -130px;
+  top: 15px;
+  background-color: #BEBEC1;
+  content: '';
+}
+
+.about {
+  color: #ffffff;
+  background-color: #000004;
+}
+
+.about h2 {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.about button {
+  color: #000004;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid transparent;
+  background-color: #BEBEC1;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.about button:hover {
+  color: #BEBEC1;
+  background-color: #000004;
+  border: 2px solid #BEBEC1;
+}
+
+.skills {
+  background-color: #ffffff;
+}
+
+.skills .title {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 200px;
 }
 
 .skills ul {
@@ -388,13 +472,35 @@ header i:hover {
 }
 
 .skills ul li {
+  width: 100px;
+  height: 100px;
+}
+
+.skills ul li i {
+  font-size: 5rem;
+}
+
+.portfolio {
+  padding: 50px 0;
+  background-color: #edff00;
+}
+
+.portfolio ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio ul li {
+  margin: 10px;
+}
+
+.portfolio ul .placeholder {
+  height: 380px;
+  width: 380px;
+  background-color: #ffffff;
 }
 
 .monsterImg {
@@ -402,8 +508,8 @@ header i:hover {
 }
 
 .monsterDetails {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8))), url(../assets/portfolio/monster2.png);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/monster2.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9))), url(../assets/portfolio/monster2.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/monster2.png);
 }
 
 .obliqueImg {
@@ -411,8 +517,8 @@ header i:hover {
 }
 
 .obliqueDetails {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8))), url(../assets/portfolio/oblique2.png);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/oblique2.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9))), url(../assets/portfolio/oblique2.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/oblique2.png);
 }
 
 .sportImg {
@@ -420,8 +526,8 @@ header i:hover {
 }
 
 .sportDetails {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8))), url(../assets/portfolio/sport2.png);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/sport2.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9))), url(../assets/portfolio/sport2.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/sport2.png);
 }
 
 .haikuImg {
@@ -429,8 +535,8 @@ header i:hover {
 }
 
 .haikuDetails {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8))), url(../assets/portfolio/haiku2.png);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/haiku2.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9))), url(../assets/portfolio/haiku2.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/haiku2.png);
 }
 
 .shoeImg {
@@ -438,14 +544,14 @@ header i:hover {
 }
 
 .shoeDetails {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8))), url(../assets/portfolio/shoeKloset2.png);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8)), url(../assets/portfolio/shoeKloset2.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9))), url(../assets/portfolio/shoeKloset2.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/shoeKloset2.png);
 }
 
 .img,
 .details {
-  height: 400px;
-  width: 400px;
+  height: 380px;
+  width: 380px;
   background-size: cover;
   background-position: center;
 }
