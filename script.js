@@ -1,30 +1,26 @@
 const app = {};
 
-//function to make the details appear on hover for each individual project
-app.showDetails = () => { 
+//function to change the display image
+app.showHoverImg = () => { 
     app.projects.forEach((project) => {
         let img = project.img;
-        let details = project.details;
-
-        $(`.${img}`).mouseenter(
+        let hover = project.hover;
+        $(`.${img}`).hover(
             function(){
-                $(`.${details}`)
+                $(`.${hover}`)
                     .removeClass('animate__fadeOut')
                     .addClass('animate__fadeIn')
                     .addClass('visible');
-            }
-        )    
-
-        $(`.${img}`).mouseleave(
+            },
             function(){
-                $(`.${details}`)
+                $(`.${hover}`)
                     .addClass('animate__fadeOut');
                 setTimeout(function(){
-                $(`.${details}`)
+                $(`.${hover}`)
                     .removeClass('visible')
                     .removeClass('animate__fadeIn')}, 500);
             }
-        )  
+        )    
     })
 }
 
@@ -32,39 +28,90 @@ app.showDetails = () => {
 
 app.init = () => {    
     AOS.init(); //initialize animations library
-    app.showDetails();
+    app.showHoverImg();
+    
 };
 
 $(function(){
     app.init();
-    
 });
 
 //array of all portfolio project classes
 app.projects = [
     monster = {
         img: 'monsterImg',
-        details: 'monsterDetails',
+        hover: 'monsterHover',
+        img1: './assets/portfolio/monster1.png',
+        img2: './assets/portfolio/monster2.png',
         name: 'Monster Mash',
         description: `A classic memory card matching game, which includes two modes (friendly and scary), three difficulty levels and a move counter.`,
-        skills: ['jQuery', 'Sass', 'Html5'],
+        skills: 'jQuery, Sass, Html5',
         live: 'https://themonstermash.netlify.app/',
         github: 'https://github.com/therealsylaucoin/monsterMash',
     },
-    {
+
+    oblique = {
         img: 'obliqueImg',
-        details: 'obliqueDetails'
+        hover: 'obliqueHover',
+        img1: './assets/portfolio/oblique1.png',
+        img2: './assets/portfolio/oblique2.png',
+        name: 'Oblique Strategies',
+        description: `My take on Brian Eno's timeless lateral thinking deck, with the addition of a Collect Strategies deck where users can contribute.`,
+        skills: 'React, Rest API, Firebase ,Sass, Html5',
+        live: '',
+        github: '',
     },
-    {
+    sport = {
         img: 'sportImg',
-        details: 'sportDetails'
+        hover: 'sportHover',
+        img1: './assets/portfolio/sport1.png',
+        img2: './assets/portfolio/sport2.png',
+        name: 'Sport Spot',
+        description: `Pair programing.`,
+        skills: 'jQuery, Sass, Html5',
+        live: '',
+        github: '',
     },
-    {
+    haiku = {
         img: 'haikuImg',
-        details: 'haikuDetails'
+        hover: 'haikuHover',
+        img1: './assets/portfolio/haiku1.png',
+        img2: './assets/portfolio/haiku2.png',
+        name: 'Haiku Ahoy',
+        description: `Group project.`,
+        skills: 'jQuery, Sass, Html5',
+        live: '',
+        github: '',
     },
-    {
+    shoeKloset = {
         img: 'shoeImg',
-        details: 'shoeDetails'
+        hover: 'shoeHover',
+        img1: './assets/portfolio/shoeKloset1.png',
+        img2: './assets/portfolio/shoeKloset2.png',
+        name: 'Shoe Kloset',
+        description: `PSD conversion`,
+        skills: 'jQuery, Sass, Html5',
+        live: '',
+        github: '',
     },
 ]
+
+
+// `
+// <h3>${project.name}</h3>
+
+// <p>${project.description}</p>
+
+//             <div>
+//                 <p>Made with:</p>
+//                 <ul>
+//                     <li>jQuery</li>
+//                     <li>Sass</li>
+//                     <li>Html5</li>
+//                 </ul> -->
+//             <!-- </div>
+
+//             <a href="https://themonstermash.netlify.app/" target="_blank" rel="noreferrer">Live</a>
+//             <a href="https://github.com/therealsylaucoin/monsterMash" target="_blank"
+//                 rel="noreferrer">GitHub</a> -->
+//             `       

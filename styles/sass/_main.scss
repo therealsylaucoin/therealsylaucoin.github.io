@@ -67,7 +67,6 @@
         text-align: center;
 
         li {
-            // background-color: $white;
             width: 100px;
             height: 100px;
 
@@ -85,71 +84,47 @@
 
     ul {
         display: flex;
+        justify-content: center;
+        align-content: center;
         flex-wrap: wrap;
+        padding: 10px 0;
+        width: 80vw;
+        height: 55vw;
 
         li {
             margin: 10px;
+            height: calc((80vw / 3) - 20px);
+            width: calc((80vw / 3) - 20px);
+            max-width: 380px;
+            max-height: 380px;
         }
 
         .placeholder {
-            height: 380px;
-            width: 380px;
             background-color: $white;
+            padding: 20px;
         }
+    }
+
+    .title {
+        margin: 30px 200px;
+        padding-bottom: 50px;
     }
 }
 
-//Individual Images
-.monsterImg {
-    background-image: url(../assets/portfolio/monster1.png);
-}
-.monsterDetails {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/monster2.png);
-}
-
-.obliqueImg {
-    background-image: url(../assets/portfolio/oblique1.png);
-}
-.obliqueDetails {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/oblique2.png);
-}
-
-.sportImg {
-    background-image: url(../assets/portfolio/sport1.png);
-}
-.sportDetails {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/sport2.png);
-}
-
-.haikuImg {
-    background-image: url(../assets/portfolio/haiku1.png);
-}
-.haikuDetails {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/haiku2.png);
-}
-
-.shoeImg {
-    background-image: url(../assets/portfolio/shoeKloset1.png);
-}
-.shoeDetails {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9)), url(../assets/portfolio/shoeKloset2.png);
-}
-
-
 //For all images/projects
 .img,
-.details {
-    height: 380px;
-    width: 380px;
+.hover {
+    height: 100%;
+    width: 100%;
     background-size: cover;
     background-position: center;
 }
 
 .img {
-    display: flex;
     position: relative;
 }
 
+.hover,
 .details {
     display:none;
 }
@@ -158,6 +133,47 @@
     display: block;
     position: absolute;
 }
+
+
+//Individual Images
+.monsterImg {
+    background-image: url(../assets/portfolio/monster1.png);
+}
+.monsterHover {
+    background-image: url(../assets/portfolio/monster2.png);
+}
+
+.obliqueImg {
+    background-image: url(../assets/portfolio/oblique1.png);
+}
+.obliqueHover {
+    background-image: url(../assets/portfolio/oblique2.png);
+}
+
+.sportImg {
+    background-image: url(../assets/portfolio/sport1.png);
+}
+.sportHover {
+    background-image: url(../assets/portfolio/sport2.png);
+}
+
+.haikuImg {
+    background-image: url(../assets/portfolio/haiku1.png);
+}
+.haikuHover {
+    background-image: url(../assets/portfolio/haiku2.png);
+}
+
+.shoeImg {
+    background-image: url(../assets/portfolio/shoe1.png);
+}
+.shoeHover {
+    background-image: url(../assets/portfolio/shoe2.png);
+}
+
+
+
+
 
 
 

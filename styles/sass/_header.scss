@@ -36,23 +36,6 @@ header {
 		position: relative;
 		background-position: left;
 
-		// //Nav Styles
-		ul {
-			margin: 0;
-			padding: 0;
-			display: flex;
-			justify-content: flex-end;
-
-			li {
-				padding: 5px 10px;
-				margin: 20px 10px;
-
-				a {
-					color: $black;
-				}
-			}
-		}
-
 		.headerText {
 			position: absolute;
 			top: 212px;
@@ -75,6 +58,27 @@ header {
 			color: $yellow;
 			text-shadow: 0px 0px 8px $grey;
 			transform: scale(1.25);
+		}
+	}
+
+	// //Nav Styles
+	ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: flex-end;
+
+		li {
+			padding: 5px 10px;
+			margin: 20px 10px;
+
+			&:hover {
+				border-bottom: 3px solid $black;
+			}
+
+			a {
+				color: $black;
+			}
 		}
 	}
 }
