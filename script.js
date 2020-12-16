@@ -1,6 +1,6 @@
 const app = {};
 
-//Event handler to show the menu!
+//Event listener to show the menu!
 //on click of button 
     //toggle class menuShow menuHide
 $('.menuToggle').click(function(){
@@ -16,14 +16,18 @@ app.scroll = () => {
     });
 };
 
-//light mode switch
-$('#switch').click(function(){
+//Event listener to scroll back to top
+$('#scrollUp').click(function(){
+    $('html, body').animate({scrollTop:0}, '300');
+});
+
+//minimal mode switch (switch between original style and minimal style)
+$('.switch').click(function(){
     $('body').toggleClass('minimal');
-    $('body').hasClass('minimal') ? $('#switch').html('Switch to original style.') : $('#switch').html('Switch to minimal style.') 
+    $('body').hasClass('minimal') ? $('.switchTxt').html('Switch to original style.') : $('.switchTxt').html('Switch to minimal style.') 
 })
 
-
-//change display images
+//FUNCTIONALITY to change display images being shown
 //hover in function
 app.hoverIn = (hoverElement) => {
     $(`.${hoverElement}`)
@@ -40,7 +44,7 @@ app.hoverOut = (hoverElement) => {
         .removeClass('animate__fadeIn')}, 500);
 }
 
-//function to change the display image (mouse hover events)
+//function to change the display image (aka, calling the above functions at the right moments)
 app.showHoverImg = () => { 
     app.projects.forEach((project) => {
         const imgEl = project.img;
@@ -64,7 +68,7 @@ app.showHoverImg = () => {
     })
 }
 
-//Show details
+////FUNCTIONALITY to show individual project details
 //function to show and hide the project details (mouse click event)
 app.showDetails = () => { 
     $('.hover')
@@ -76,25 +80,44 @@ app.showDetails = () => {
             .addClass('animate__fadeInUp')
             .removeClass('animate__fadeOutDown');
     })
-
-    //attempting to ^ replicate via keyboard!
-    .on('keydown', function(e){
+    //replicate the above via keyboard!
+    $('.project').on('keypress', function(e){
         if (e.key == 'Enter'){
-            console.log('keypress');
-        }
-        console.log('keypress');
-    })
-
-    //hide the details
-    $('.fa-times').click(function(){
-        app.name = $(this).data('name');
-        $(`.${app.name}Details`)
-            .addClass('animate__fadeOutDown')
-            .removeClass('animate__fadeInUp')
-        setTimeout(function(){
+            app.name = $(this).data('name');
             $(`.${app.name}Details`)
-                .removeClass('visible')
-        }, 800)
+                .addClass('visible')
+                .addClass('animate__fadeInUp')
+                .removeClass('animate__fadeOutDown');
+        }
+    })
+    app.hideDetails();
+}
+
+app.hideDetails = () => {
+    //hide the details
+    $('.closeDetails')
+        .click(function(){
+            app.name = $(this).data('name');
+            $(`.${app.name}Details`)
+                .addClass('animate__fadeOutDown')
+                .removeClass('animate__fadeInUp')
+            setTimeout(function(){
+                $(`.${app.name}Details`)
+                    .removeClass('visible')
+            },  800)
+        })
+         //replicate the above via keyboard!
+        .on('keypress', function(e){
+            if (e.key == 'Enter'){
+            app.name = $(this).data('name');
+            $(`.${app.name}Details`)
+                .addClass('animate__fadeOutDown')
+                .removeClass('animate__fadeInUp')
+            setTimeout(function(){
+                $(`.${app.name}Details`)
+                    .removeClass('visible')
+            },  800)
+        }
     })
 }
 
@@ -102,6 +125,7 @@ app.init = () => {
     AOS.init(); //initialize animations library
     app.showHoverImg();
     app.showDetails();
+
     app.scroll();
 };
 
@@ -112,24 +136,39 @@ $(function(){
 //array of all portfolio project classes
 app.projects = [
     monster = {
+        img1: './assets/portfolio/monster1.png',
+        img2: './assets/portfolio/monster2.png',
         img: 'monsterImg',
         hover: 'monsterHover',
     },
 
     oblique = {
+        img1: './assets/portfolio/oblique1.png',
+        img2: './assets/portfolio/oblique2.png',
+        img: 'monsterImg',
         img: 'obliqueImg',
         hover: 'obliqueHover',
     },
     sport = {
+        img1: './assets/portfolio/sport1.png',
+        img2: './assets/portfolio/sport2.png',
+        img: 'monsterImg',
         img: 'sportImg',
         hover: 'sportHover',
     },
     haiku = {
+        img1: './assets/portfolio/haiku1.png',
+        img2: './assets/portfolio/haiku2.png',
+        img: 'monsterImg',
         img: 'haikuImg',
         hover: 'haikuHover',
     },
     shoeKloset = {
+        img1: './assets/portfolio/shoe1.png',
+        img2: './assets/portfolio/shoe2.png',
+        img: 'monsterImg',
         img: 'shoeImg',
         hover: 'shoeHover',
     },
 ]
+

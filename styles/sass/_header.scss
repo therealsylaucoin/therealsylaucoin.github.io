@@ -33,7 +33,7 @@ header {
 
 	.headerRight {
 		width: 70vw;
-		background-image: url(../assets/headerRightBlack.png);
+		background-image: url(../assets/headerRight3.png);
 		position: relative;
 		background-position: left;
 
@@ -44,7 +44,7 @@ header {
 
 			.heading {
 				position: absolute;
-				right: 435px;
+				right: 400px;
 			}
 
 			h1 {
@@ -54,8 +54,9 @@ header {
 			}
 
 			button {
+				display: block;
 				border: none;
-				background-color: $black;
+				background-color: transparent;
 				color: $white;
 			}
 		}
@@ -64,7 +65,7 @@ header {
 	i {
 		margin-top: 20px;
 		margin-left: 5px;
-		font-size: 4rem;
+		font-size: 3rem;
 		color: $yellow;
 
 		&:hover,
@@ -127,7 +128,7 @@ header {
 
 	    i {
 	        color: $yellow;
-	        font-size: 5rem;
+	        font-size: 3rem;
 	        position: absolute;
 	        top:10px;
 	        right: 50px;

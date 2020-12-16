@@ -297,6 +297,10 @@ img {
   background-image: url(../assets/codeMono.png);
 }
 
+.minimal .headerRight button {
+  color: #000004 !important;
+}
+
 .minimal .headerRight i,
 .minimal .navBarFixed i,
 .minimal .logoWord {
@@ -338,6 +342,47 @@ img {
   border-bottom: 2px solid #ffffff;
 }
 
+.minimal .heading--stroke {
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000004;
+  -moz-text-stroke-color: #000004;
+  color: #ffffff;
+}
+
+.minimal .heading--shadow {
+  text-shadow: 5px 1px #000004;
+}
+
+.minimal .heading-color:after {
+  background-color: #000004;
+}
+
+.minimal .monsterImg {
+  background-image: url(../assets/portfolio/monsterMin.png);
+}
+
+.minimal .obliqueImg {
+  background-image: url(../assets/portfolio/obliqueMin.png);
+}
+
+.minimal .sportImg {
+  background-image: url(../assets/portfolio/sportMin.png);
+}
+
+.minimal .haikuImg {
+  background-image: url(../assets/portfolio/haikuMin.png);
+}
+
+.minimal .shoeImg {
+  background-image: url(../assets/portfolio/shoeMin.png);
+}
+
+.minimal .links li a:hover, .minimal .links li a:focus-within {
+  background-color: #000004 !important;
+  color: #ffffff;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,7 +420,7 @@ header .headshotContainer:hover {
 
 header .headerRight {
   width: 70vw;
-  background-image: url(../assets/headerRightBlack.png);
+  background-image: url(../assets/headerRight3.png);
   position: relative;
   background-position: left;
 }
@@ -388,7 +433,7 @@ header .headerRight .headerText {
 
 header .headerRight .headerText .heading {
   position: absolute;
-  right: 435px;
+  right: 400px;
 }
 
 header .headerRight .headerText h1 {
@@ -398,15 +443,16 @@ header .headerRight .headerText h1 {
 }
 
 header .headerRight .headerText button {
+  display: block;
   border: none;
-  background-color: #000004;
+  background-color: transparent;
   color: #ffffff;
 }
 
 header i {
   margin-top: 20px;
   margin-left: 5px;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #edff00;
 }
 
@@ -480,7 +526,7 @@ header .menuShow {
 
 header .menuShow i {
   color: #edff00;
-  font-size: 5rem;
+  font-size: 3rem;
   position: absolute;
   top: 10px;
   right: 50px;

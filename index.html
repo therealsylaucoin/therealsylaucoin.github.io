@@ -28,7 +28,25 @@
 
         <!-- button to open the menu -->
         <nav aria-label="open nav" class="navBarFixed">
-            <button class="menuToggle" aria-label="open menu"><i class="fa fa-bars"></i></button>
+
+            <button
+                class="switch"
+                aria-label="switch to minimal style">
+                <i class="fas fa-adjust"></i>
+            </button>
+
+            <button
+                id="scrollUp"
+                aria-label="scroll to top">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+
+            <button 
+                class="menuToggle" 
+                aria-label="open menu">
+                <i class="fa fa-bars"></i>
+            </button>
+
         </nav>
 
         <!-- pop up nav menu -->
@@ -59,9 +77,10 @@
                 <p class="logoWord">Codes</p>
                 <h1>I'm Syl.</h1>
                 <h1>Front End Developer.</h1>
-                <button id="switch">Click here to view this site with minimal style.</button>
+                <button class="switch switchTxt">Click to view this site with minimal style.</button>
                 <a href="#about"><i
-                        class="fas fa-chevron-down animate__animated animate__heartBeat animate__infinite"></i></a>
+                    class="fas fa-chevron-down animate__animated animate__heartBeat animate__infinite"></i>
+                </a>
             </div>
 
         </section>
@@ -141,7 +160,7 @@
                 </li>
 
                 <!-- Monster Mash project-->
-                <li class="monsterImg project" tabIndex="0">
+                <li class="monsterImg project" tabIndex="0" data-name="monster">
 
                     <div class="monsterHover hover animate__animated animate__fadeOut" data-name="monster"></div>
 
@@ -149,8 +168,8 @@
 
                         <div class="detailsTitle">
                             <h3>Monster Mash</h3>
-                            <button aria-label="Close project detail window">
-                                <i class="fas fa-times" data-name="monster"></i>
+                            <button class="closeDetails" data-name="monster" aria-label="Close project detail window">
+                                <i class="fas fa-times"></i>
                             </button>
                         </div>
 
@@ -179,7 +198,7 @@
                 </li>
 
                 <!-- Oblique Strategies project  -->
-                <li class="obliqueImg project" tabIndex="0">
+                <li class="obliqueImg project" tabIndex="0" data-name="oblique">
 
                     <div class="obliqueHover hover animate__animated animate__fadeOut" data-name="oblique"></div>
 
@@ -187,8 +206,8 @@
 
                         <div class="detailsTitle">
                             <h3>Oblique Strategies</h3>
-                            <button aria-label="Close project detail window">
-                                <i class="fas fa-times" data-name="oblique"></i>
+                            <button class="closeDetails" data-name="oblique"  aria-label="Close project detail window">
+                                <i class="fas fa-times"></i>
                             </button>
                         </div>
 
@@ -217,7 +236,7 @@
                 </li>
 
                 <!-- Sport Spot project -->
-                <li class="sportImg project" tabIndex="0">
+                <li class="sportImg project" tabIndex="0" data-name="sport">
 
                     <div class="sportHover hover animate__animated animate__fadeOut" data-name="sport"></div>
 
@@ -225,8 +244,8 @@
 
                         <div class="detailsTitle">
                             <h3>Sport Spot</h3>
-                            <button aria-label="Close project detail window">
-                                <i class="fas fa-times" data-name="sport"></i>
+                            <button class="closeDetails" data-name="sport" aria-label="Close project detail window">
+                                <i class="fas fa-times"></i>
                             </button>
                         </div>
 
@@ -252,7 +271,7 @@
                 </li>
 
                 <!-- Haiku Ahoy project -->
-                <li class="haikuImg project" tabIndex="0">
+                <li class="haikuImg project" tabIndex="0" data-name="haiku">
 
                     <div class="haikuHover hover animate__animated animate__fadeOut" data-name="haiku"></div>
 
@@ -260,8 +279,8 @@
 
                         <div class=detailsTitle>
                             <h3>Haiku Ahoy</h3>
-                            <button aria-label="Close project detail window">
-                                <i class="fas fa-times" data-name="haiku"></i>
+                            <button class="closeDetails" data-name="haiku"  aria-label="Close project detail window">
+                                <i class="fas fa-times"></i>
                             </button>
                         </div>
 
@@ -289,7 +308,7 @@
                 </li>
 
                 <!-- Shoe Kloset project  -->
-                <li class="shoeImg project" tabIndex="0">
+                <li class="shoeImg project" tabIndex="0" data-name="shoe">
 
                     <div class="shoeHover hover animate__animated animate__fadeOut" data-name="shoe"></div>
 
@@ -297,8 +316,8 @@
 
                         <div class=detailsTitle>
                             <h3>Shoe Kloset</h3>
-                            <button aria-label="Close project detail window">
-                                <i class="fas fa-times" data-name="shoe"></i>
+                            <button class="closeDetails" data-name="shoe" aria-label="Close project detail window">
+                                <i class="fas fa-times"></i>
                             </button>
                         </div>
 
@@ -403,7 +422,7 @@
 
     <footer>
 
-        <p>Made by Syl</p>
+        <p>Made by Syl <i class="fas fa-moon"></i></p>
 
     </footer>
 

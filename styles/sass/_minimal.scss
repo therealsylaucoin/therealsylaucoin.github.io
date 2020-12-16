@@ -1,6 +1,4 @@
 .minimal {
-
-
     h1 {
         color: $black !important;
     }
@@ -11,6 +9,10 @@
 
     .headerRight {
         background-image: url(../assets/codeMono.png);
+
+        button{
+            color: $black !important;
+        }
     }
 
     .headerRight i,
@@ -56,10 +58,58 @@
 
     .menuShow {
         li {
-	        a:hover,
-	        a:focus {
-	            border-bottom:2px solid $white;
-	        }
-	    }
+            a:hover,
+            a:focus {
+                border-bottom:2px solid $white;
+            }
+        }
+    }
+
+    //SYL CODES LOGO STYLES
+    .heading {
+        &--stroke {
+            @include stroke-width(2px);
+            @include stroke-color($black);
+            color: $white;
+        }
+
+        &--shadow {
+            text-shadow: 5px 1px $black;
+        }
+    
+		&-color {
+			&:after {
+				background-color: $black;
+			}
+		}
+    }
+
+    //Individual Images
+    .monsterImg {
+        background-image: url(../assets/portfolio/monsterMin.png);
+    }
+    .obliqueImg {
+        background-image: url(../assets/portfolio/obliqueMin.png);
+    }
+    .sportImg {
+        background-image: url(../assets/portfolio/sportMin.png);
+    }
+    .haikuImg {
+        background-image: url(../assets/portfolio/haikuMin.png);
+    }
+    .shoeImg {
+        background-image: url(../assets/portfolio/shoeMin.png);
+    }
+
+    .links li {
+
+        a {
+            &:hover,
+            &:focus-within {
+                background-color: $black !important;
+                color: $white;
+            }
+        }
     }
 }
+
