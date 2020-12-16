@@ -3,6 +3,11 @@
         color: $black !important;
     }
 
+    .navBarFixed.scrolled {
+		background-color: rgba(255,255,255,0.9) !important;
+	}
+
+
     .headerLeft {
         background-image: none;
     }
@@ -23,10 +28,6 @@
 
     .title::before {
         background-color: $black !important;
-    }
-
-    .navBarFixed.scrolled {
-		background-color: transparent !important;
     }
 
     .menu i {

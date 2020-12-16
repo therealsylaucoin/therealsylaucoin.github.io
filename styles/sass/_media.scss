@@ -1,0 +1,160 @@
+@media (max-width: 950px){
+//header section
+header{
+    .headerLeft {
+        min-width: 250px;
+        width: 100vw;
+    }
+
+    .headerRight {
+        width: 100vw;
+
+        .headerText {
+            .heading {
+                left: 0px;
+                top: -100px;
+            }
+        }
+    }
+}
+
+//contact section
+    .flexContainer {
+        p {
+            width: 75%;
+        }
+    }
+
+    .getInTouch{
+        form {
+            
+            input[type="text"],
+            input[type="email"] {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px){
+//header styles
+    .switch {
+        font-size: 1.4rem;
+    }
+
+    .heading {
+        font-size: 7rem;
+    }
+    
+    .logoWord {
+        font-size: 7rem;
+    }
+
+    header{
+        .headerRight {
+            .headerText {
+                .heading {
+                    top: -80px;
+                }
+            }
+        }
+    }
+    //about section
+    .about h2 {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 640px) {
+//nav styles
+    .menuShow {
+        ul{
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 525px) {
+//change background header!
+.headerLeft {
+    display: none;
+}
+
+header{
+    .headerRight {
+        background-image: url(../assets/mobile2.png);
+        background-position: center;
+        min-height: 550px;
+    }
+}
+
+.minimal {
+    header{
+        .headerRight {
+            background-image: url(../assets/mobile3.png);
+        }
+    }
+}
+
+//skills section 
+    .skills ul {
+        li {
+            width: 80px;
+        }
+    }
+
+//portfolio section
+    .portfolio {
+        .projectList{
+            .intro,
+            .project,
+            .details {
+                margin: 10px 0;
+                width: 348px !important;
+                height: 350px !important;
+            }
+        }
+    }
+
+    .details {
+        p {
+            font-size: 1.6rem;
+        }
+    
+        li {
+            padding: 10px;
+            margin: 5px 10px;
+        }
+    }
+
+    .visible {
+        right: 0px;
+    }
+    
+//contact section
+    form {
+        align-items: center;
+    }
+
+    .getInTouch {
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0;
+
+        ul {
+            flex-direction: row;
+            margin-bottom: 25px;
+            
+            li {
+                margin: 10px 15px;
+            }
+        }
+    }
+
+    .flexContainer {
+        p {
+            width: 100%;
+        }
+    }
+}

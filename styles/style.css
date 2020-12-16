@@ -289,6 +289,10 @@ img {
   color: #000004 !important;
 }
 
+.minimal .navBarFixed.scrolled {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
 .minimal .headerLeft {
   background-image: none;
 }
@@ -309,10 +313,6 @@ img {
 
 .minimal .title::before {
   background-color: #000004 !important;
-}
-
-.minimal .navBarFixed.scrolled {
-  background-color: transparent !important;
 }
 
 .minimal .menu i {
@@ -447,6 +447,7 @@ header .headerRight .headerText button {
   border: none;
   background-color: transparent;
   color: #ffffff;
+  font-family: "Open Sans", sans-serif;
 }
 
 header i {
@@ -961,6 +962,8 @@ header .menuShow li a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .getInTouch form input[type="text"],
@@ -986,6 +989,7 @@ header .menuShow li a:focus {
 }
 
 .getInTouch form textarea {
+  width: 100%;
   resize: none;
   border: 1px solid #BEBEC1;
   height: 200px;
@@ -1035,4 +1039,114 @@ footer {
 footer p {
   margin: 0;
   padding: 10px;
+}
+
+@media (max-width: 950px) {
+  header .headerLeft {
+    min-width: 250px;
+    width: 100vw;
+  }
+  header .headerRight {
+    width: 100vw;
+  }
+  header .headerRight .headerText .heading {
+    left: 0px;
+    top: -100px;
+  }
+  .flexContainer p {
+    width: 75%;
+  }
+  .getInTouch form input[type="text"],
+  .getInTouch form input[type="email"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .switch {
+    font-size: 1.4rem;
+  }
+  .heading {
+    font-size: 7rem;
+  }
+  .logoWord {
+    font-size: 7rem;
+  }
+  header .headerRight .headerText .heading {
+    top: -80px;
+  }
+  .about h2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .menuShow ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 525px) {
+  .headerLeft {
+    display: none;
+  }
+  header .headerRight {
+    background-image: url(../assets/mobile2.png);
+    background-position: center;
+    min-height: 550px;
+  }
+  .minimal header .headerRight {
+    background-image: url(../assets/mobile3.png);
+  }
+  .skills ul li {
+    width: 80px;
+  }
+  .portfolio .projectList .intro,
+  .portfolio .projectList .project,
+  .portfolio .projectList .details {
+    margin: 10px 0;
+    width: 348px !important;
+    height: 350px !important;
+  }
+  .details p {
+    font-size: 1.6rem;
+  }
+  .details li {
+    padding: 10px;
+    margin: 5px 10px;
+  }
+  .visible {
+    right: 0px;
+  }
+  form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .getInTouch {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 25px 0;
+  }
+  .getInTouch ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 25px;
+  }
+  .getInTouch ul li {
+    margin: 10px 15px;
+  }
+  .flexContainer p {
+    width: 100%;
+  }
 }
