@@ -1,3 +1,16 @@
+//For all portfolio images
+.project,
+.hover {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.project {
+    position: relative;
+}
+
 //Portfolio section
 .portfolio {
     padding: 50px 0;
@@ -15,7 +28,7 @@
         }
 
         .intro,
-        .project,
+        .project,   
         .details {
             margin: 10px;
             width: 400px;
@@ -25,6 +38,7 @@
         .intro, 
         .details {
             background-color: $white;
+            border: 0.5px solid $black;
             padding: 20px;
         }
     }
@@ -36,13 +50,16 @@
 }
 
 .details {
-    position: absolute;
-    top: -10px;
-    right: -10px;
+    display: none;
 
     .detailsTitle {
         display: flex;
         justify-content: space-between;
+
+        button {
+            background-color: $white;
+            border: none;
+        }
 
         h3 {
             margin: 0;
@@ -69,41 +86,28 @@
     }
 
     .links li {
-        background-color: $white;
-        border: 2px solid $black;
-        padding: 10px;
-
-        &:hover {
-            background-color: $yellow;
-        }
+        background-color: transparent;
 
         a {
+            background-color: $white;
+            border: 2px solid $black;
             color: $black;
             text-transform: uppercase;
+            padding: 10px 20px;
+
+            &:hover,
+            &:focus-within {
+                background-color: $yellow;
+            }
         }
     }
-}
-
-//For all portfolio images
-.project,
-.hover {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-.project {
-    position: relative;
-}
-
-.hover {
-    display:none;
 }
 
 .visible {
     display: block;
     position: absolute;
+    top: -10px;
+    right: -10px;
 }
 
 //Individual Images

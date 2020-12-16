@@ -271,6 +271,75 @@ img {
   display: block;
 }
 
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  color: white;
+}
+
+.skipLink:focus {
+  left: 10px;
+  color: #000004;
+  background-color: #edff00;
+}
+
+.menuHide {
+  display: none;
+}
+
+.menuShow {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 50;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menuShow i {
+  color: #edff00;
+  font-size: 5rem;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+.menuShow ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menuShow li {
+  font-size: 2.5rem;
+  margin: 20px;
+}
+
+.menuShow li a {
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+.menuShow li a:hover,
+.menuShow li a:focus {
+  border-bottom: 2px solid #edff00;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,7 +349,7 @@ header {
 header .headerLeft,
 header .headerRight {
   height: 100vh;
-  min-height: 650px;
+  min-height: 750px;
   background-size: cover;
 }
 
@@ -339,36 +408,46 @@ header i {
   color: #edff00;
 }
 
-header i:hover {
+header i:hover, header i:focus {
   color: #ffffff;
-  text-shadow: 0px 0px 8px #ffffff;
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
 }
 
-header ul {
-  margin: 0;
+header .navBarFixed {
+  position: fixed;
+  z-index: 40;
+  width: 100vw;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header ul li {
-  padding: 5px 10px;
-  margin: 20px 10px;
-  border-bottom: 2px solid transparent;
-  background-color: #000004;
-}
-
-header ul li:hover {
-  border-bottom: 2px solid #edff00;
-}
-
-header ul li a {
+header .navBarFixed p {
   color: #ffffff;
+}
+
+header .navBarFixed p, header .navBarFixed i {
+  padding: 10px 5px;
+}
+
+header .navBarFixed button {
+  background-color: transparent;
+  border: none;
+}
+
+header .navBarFixed i {
+  margin: 0 20px 0 0;
+  cursor: pointer;
+}
+
+header .navBarFixed.scrolled {
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .heading {
@@ -459,7 +538,7 @@ header ul li a {
   margin: 30px 0;
 }
 
-.about button:hover {
+.about button:hover, .about button:focus {
   color: #000004;
   background-color: #ffffff;
   border: 2px solid #000004;
@@ -527,6 +606,18 @@ header ul li a {
   color: #BEBEC1;
 }
 
+.project,
+.hover {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.project {
+  position: relative;
+}
+
 .portfolio {
   padding: 50px 0;
   background-color: #edff00;
@@ -561,6 +652,7 @@ header ul li a {
 .portfolio .projectList .intro,
 .portfolio .projectList .details {
   background-color: #ffffff;
+  border: 0.5px solid #000004;
   padding: 20px;
 }
 
@@ -570,9 +662,7 @@ header ul li a {
 }
 
 .details {
-  position: absolute;
-  top: -10px;
-  right: -10px;
+  display: none;
 }
 
 .details .detailsTitle {
@@ -582,6 +672,11 @@ header ul li a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.details .detailsTitle button {
+  background-color: #ffffff;
+  border: none;
 }
 
 .details .detailsTitle h3 {
@@ -613,39 +708,26 @@ header ul li a {
 }
 
 .details .links li {
-  background-color: #ffffff;
-  border: 2px solid #000004;
-  padding: 10px;
-}
-
-.details .links li:hover {
-  background-color: #edff00;
+  background-color: transparent;
 }
 
 .details .links li a {
+  background-color: #ffffff;
+  border: 2px solid #000004;
   color: #000004;
   text-transform: uppercase;
+  padding: 10px 20px;
 }
 
-.project,
-.hover {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-.project {
-  position: relative;
-}
-
-.hover {
-  display: none;
+.details .links li a:hover, .details .links li a:focus-within {
+  background-color: #edff00;
 }
 
 .visible {
   display: block;
   position: absolute;
+  top: -10px;
+  right: -10px;
 }
 
 .monsterImg {
@@ -752,6 +834,10 @@ header ul li a {
   font-size: 3rem;
 }
 
+.getInTouch a:hover, .getInTouch a:focus {
+  color: #000004;
+}
+
 .getInTouch form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -782,6 +868,14 @@ header ul li a {
   padding: 10px;
 }
 
+.getInTouch form input[type="text"]:hover, .getInTouch form input[type="text"]:focus,
+.getInTouch form input[type="email"]:hover,
+.getInTouch form input[type="email"]:focus,
+.getInTouch form textarea:hover,
+.getInTouch form textarea:focus {
+  background-color: rgba(190, 190, 193, 0.3);
+}
+
 .getInTouch form input[type="text"],
 .getInTouch form input[type="email"] {
   width: 45%;
@@ -804,7 +898,7 @@ header ul li a {
   border: 1px solid #000004;
 }
 
-.getInTouch form button:hover {
+.getInTouch form button:hover, .getInTouch form buttonfocus {
   background-color: #ffffff;
   cursor: pointer;
 }
