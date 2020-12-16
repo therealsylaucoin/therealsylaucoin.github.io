@@ -16,6 +16,12 @@ app.scroll = () => {
     });
 };
 
+//light mode switch
+$('#switch').click(function(){
+    $('body').toggleClass('minimal');
+    $('body').hasClass('minimal') ? $('#switch').html('Switch to original style.') : $('#switch').html('Switch to minimal style.') 
+})
+
 
 //change display images
 //hover in function

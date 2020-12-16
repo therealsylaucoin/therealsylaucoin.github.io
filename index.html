@@ -24,31 +24,26 @@
     <!-- Skip to main content link -->
     <a href="#mainContent" class="skipLink">Skip to main content.</a>
 
-    <nav class="menu menuHide" aria-label="nav menu">
-
-        <i class="menuToggle fas fa-times"></i>
-
-        <ul>
-            <li class="menuToggle"><a href="#about">About</a></li>
-            <li class="menuToggle"><a href="#skills">Skills</a></li>
-            <li class="menuToggle"><a href="#portfolio">Portfolio</a></li>
-            <li class="menuToggle"><a href="#contact">Contact</a></li>
-        </ul>
-
-    </nav>
-
     <header>
 
+        <!-- button to open the menu -->
         <nav aria-label="open nav" class="navBarFixed">
-
-            <p>Menu</p>
             <button class="menuToggle" aria-label="open menu"><i class="fa fa-bars"></i></button>
-
         </nav>
 
-        <section class="headerLeft">
+        <!-- pop up nav menu -->
+        <nav class="menu menuHide" aria-label="nav menu">
+            <i class="menuToggle fas fa-times"></i>
+            <ul>
+                <li class="menuToggle"><a href="#about">About</a></li>
+                <li class="menuToggle"><a href="#skills">Skills</a></li>
+                <li class="menuToggle"><a href="#portfolio">Portfolio</a></li>
+                <li class="menuToggle"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-            <p class="heading heading--stroke heading--shadow">Syl</p>
+        <!-- Left side - Headshot + bg -->
+        <section class="headerLeft">
 
             <div class="headshotContainer">
                 <!-- Headshot goes here -->
@@ -56,12 +51,15 @@
 
         </section>
 
+        <!-- Right side - text + bg -->
         <section class="headerRight">
 
             <div class="headerText">
+                <p class="heading heading--stroke heading--shadow">Syl</p>
                 <p class="logoWord">Codes</p>
                 <h1>I'm Syl.</h1>
                 <h1>Front End Developer.</h1>
+                <button id="switch">Click here to view this site with minimal style.</button>
                 <a href="#about"><i
                         class="fas fa-chevron-down animate__animated animate__heartBeat animate__infinite"></i></a>
             </div>
@@ -414,5 +412,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- For animation library -->
     <script src="script.js"></script>
 </body>
+
 
 </html>

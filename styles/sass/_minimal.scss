@@ -1,0 +1,65 @@
+.minimal {
+
+
+    h1 {
+        color: $black !important;
+    }
+
+    .headerLeft {
+        background-image: none;
+    }
+
+    .headerRight {
+        background-image: url(../assets/codeMono.png);
+    }
+
+    .headerRight i,
+    .navBarFixed i,
+    .logoWord {
+        color: $black;
+    }
+
+    .title::before {
+        background-color: $black !important;
+    }
+
+    .navBarFixed.scrolled {
+		background-color: transparent !important;
+    }
+
+    .menu i {
+        color: $white;
+    }
+
+    .about, .portfolio {
+        background-color: $white;
+    }
+
+    .flexContainer {
+        a {
+            background-color: transparent;
+            border-bottom: 1px solid $grey;
+        }
+    }
+
+    .getInTouch {
+        a {
+            border: none;
+        }
+        form {
+            button {
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+
+    .menuShow {
+        li {
+	        a:hover,
+	        a:focus {
+	            border-bottom:2px solid $white;
+	        }
+	    }
+    }
+}

@@ -15,13 +15,6 @@ header {
 		background-image: url(../assets/headerLeftMono.png);
 		position: relative;
 		background-position: right;
-
-		p {
-			position: absolute;
-			top: 200px;
-			right: 10px;
-			z-index: 10;
-		}
 	}
 
 	.headshotContainer {
@@ -49,9 +42,20 @@ header {
 			top: 200px;
 			left: 10px;
 
+			.heading {
+				position: absolute;
+				right: 435px;
+			}
+
 			h1 {
 				font-weight: 300;
 				margin: 10px;
+				color: $white;
+			}
+
+			button {
+				border: none;
+				background-color: $black;
 				color: $white;
 			}
 		}
@@ -102,19 +106,54 @@ header {
 	.navBarFixed.scrolled {
 		background-color: rgba(0,0,0,0.8) !important;
 	}
+
+	
+	//pop up nav menu
+	.menuHide {
+		display: none;
+	}
+
+	.menuShow {
+		position: fixed;
+	    background-color: rgba(0,0,0,0.95);
+	    z-index: 50;
+	    height: 100vh;
+	    width: 100vw;
+	    text-align: center;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+
+	    i {
+	        color: $yellow;
+	        font-size: 5rem;
+	        position: absolute;
+	        top:10px;
+	        right: 50px;
+	    }
+
+	    ul {
+	        display: flex;
+	    }
+
+	    li {
+	        font-size: 2.5rem;
+	        margin: 20px;
+	        a {
+	            color: $white;
+	            padding: 10px 20px;
+	        }
+
+	        a:hover,
+	        a:focus {
+	            border-bottom:2px solid $yellow;
+	        }
+	    }
+	}
 }
 
 //SYL CODES LOGO STYLES
-@mixin stroke-width($property) {
-	-webkit-text-stroke-width: $property;
-	-moz-text-stroke-width: $property;
-}
-
-@mixin stroke-color($property) {
-	-webkit-text-stroke-color: $property;
-	-moz-text-stroke-color: $property;
-}
-
 .heading {
 	font-size: 10rem;
 	letter-spacing: 6px;

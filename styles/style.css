@@ -285,59 +285,57 @@ img {
   background-color: #edff00;
 }
 
-.menuHide {
-  display: none;
+.minimal h1 {
+  color: #000004 !important;
 }
 
-.menuShow {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.95);
-  z-index: 50;
-  height: 100vh;
-  width: 100vw;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.minimal .headerLeft {
+  background-image: none;
 }
 
-.menuShow i {
-  color: #edff00;
-  font-size: 5rem;
-  position: absolute;
-  top: 10px;
-  right: 50px;
+.minimal .headerRight {
+  background-image: url(../assets/codeMono.png);
 }
 
-.menuShow ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.minimal .headerRight i,
+.minimal .navBarFixed i,
+.minimal .logoWord {
+  color: #000004;
 }
 
-.menuShow li {
-  font-size: 2.5rem;
-  margin: 20px;
+.minimal .title::before {
+  background-color: #000004 !important;
 }
 
-.menuShow li a {
+.minimal .navBarFixed.scrolled {
+  background-color: transparent !important;
+}
+
+.minimal .menu i {
   color: #ffffff;
-  padding: 10px 20px;
 }
 
-.menuShow li a:hover,
-.menuShow li a:focus {
-  border-bottom: 2px solid #edff00;
+.minimal .about, .minimal .portfolio {
+  background-color: #ffffff;
+}
+
+.minimal .flexContainer a {
+  background-color: transparent;
+  border-bottom: 1px solid #BEBEC1;
+}
+
+.minimal .getInTouch a {
+  border: none;
+}
+
+.minimal .getInTouch form button {
+  background-color: #000004;
+  color: #ffffff;
+}
+
+.minimal .menuShow li a:hover,
+.minimal .menuShow li a:focus {
+  border-bottom: 2px solid #ffffff;
 }
 
 header {
@@ -359,13 +357,6 @@ header .headerLeft {
   background-image: url(../assets/headerLeftMono.png);
   position: relative;
   background-position: right;
-}
-
-header .headerLeft p {
-  position: absolute;
-  top: 200px;
-  right: 10px;
-  z-index: 10;
 }
 
 header .headshotContainer {
@@ -395,9 +386,20 @@ header .headerRight .headerText {
   left: 10px;
 }
 
+header .headerRight .headerText .heading {
+  position: absolute;
+  right: 435px;
+}
+
 header .headerRight .headerText h1 {
   font-weight: 300;
   margin: 10px;
+  color: #ffffff;
+}
+
+header .headerRight .headerText button {
+  border: none;
+  background-color: #000004;
   color: #ffffff;
 }
 
@@ -448,6 +450,61 @@ header .navBarFixed i {
 
 header .navBarFixed.scrolled {
   background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+header .menuHide {
+  display: none;
+}
+
+header .menuShow {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 50;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .menuShow i {
+  color: #edff00;
+  font-size: 5rem;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+header .menuShow ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .menuShow li {
+  font-size: 2.5rem;
+  margin: 20px;
+}
+
+header .menuShow li a {
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+header .menuShow li a:hover,
+header .menuShow li a:focus {
+  border-bottom: 2px solid #edff00;
 }
 
 .heading {
