@@ -1,73 +1,77 @@
-//For all portfolio images
-.project,
-.hover {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-.project {
-    position: relative;
-}
-
-//Portfolio section
 .portfolio {
     padding: 50px 0;
     background-color: $yellow;
-
-    .projectList {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-        padding: 10px 0;
-
-        .project {
-            overflow: hidden;
-        }
-
-        .intro,
-        .project,
-        .details {
-            margin: 10px;
-            width: 400px;
-            height: 400px;
-        }
-
-        .intro, 
-        .details {
-            background-color: $white;
-            border: 0.5px solid $black;
-            padding: 20px;
-        }
-    }
-
-    .title {
-        margin: 30px 200px;
-        padding-bottom: 50px;
+    h2 {
+        margin: 0 auto;
     }
 }
 
+.projectList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+    
+.project {
+    position: relative;
+    overflow: hidden;
+    a {
+        font-weight: 700;
+        color: $black;
+    }
+}
+
+.intro, 
+.project, 
+.details,
+.projectImg {
+    height: 455px;
+    width: 455px;
+    min-width: 250px;
+    min-height: 250px;
+    margin: 5px;
+}
+
+.intro,
 .details {
-    display: none;
+    background-color: $white;
+    border: 1px solid $black;
+    padding: 20px;
+}
 
-    .detailsTitle {
-        display: flex;
-        justify-content: space-between;
+.projectImg {
+    position:relative;
+    
+    img {
+        position:absolute;
+        left:0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    img.top:hover {
+        opacity: 0;
+    }
+}
 
-        button {
-            background-color: $white;
-            border: none;
-        }
+    .title {
+        padding-bottom: 50px;
+    }
 
-        h3 {
-            margin: 0;
-        }
+.details {
+    position: absolute;
+    top: -5px;
+    right: -5px;
 
-        p {
-            font-size: 1.6rem;
-        }
+    h3 {
+        margin: 0 auto;
+    }
+
+    .skillsList {
+        font-family: $fontHeading;
+        font-weight: 700;
+        text-align: center;
     }
 
     ul {
@@ -103,45 +107,10 @@
     }
 }
 
+// for details div
 .visible {
     display: block;
-    position: absolute;
-    top: -10px;
-    right: -10px;
 }
 
-//Individual Images
-.monsterImg {
-    background-image: url(../assets/portfolio/monster1.png);
-}
-.monsterHover {
-    background-image: url(../assets/portfolio/monster2.png);
-}
 
-.obliqueImg {
-    background-image: url(../assets/portfolio/oblique1.png);
-}
-.obliqueHover {
-    background-image: url(../assets/portfolio/oblique2.png);
-}
 
-.sportImg {
-    background-image: url(../assets/portfolio/sport1.png);
-}
-.sportHover {
-    background-image: url(../assets/portfolio/sport2.png);
-}
-
-.haikuImg {
-    background-image: url(../assets/portfolio/haiku1.png);
-}
-.haikuHover {
-    background-image: url(../assets/portfolio/haiku2.png);
-}
-
-.shoeImg {
-    background-image: url(../assets/portfolio/shoe1.png);
-}
-.shoeHover {
-    background-image: url(../assets/portfolio/shoe2.png);
-}
