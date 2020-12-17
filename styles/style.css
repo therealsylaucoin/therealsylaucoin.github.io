@@ -442,14 +442,6 @@ header .headerRight .headerText h1 {
   color: #ffffff;
 }
 
-header .headerRight .headerText button {
-  display: block;
-  border: none;
-  background-color: transparent;
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-}
-
 header i {
   margin-top: 20px;
   margin-left: 5px;
@@ -710,58 +702,56 @@ header .menuShow li a:focus {
   color: #BEBEC1;
 }
 
-.project,
-.hover {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-.project {
-  position: relative;
-}
-
 .portfolio {
   padding: 50px 0;
   background-color: #edff00;
 }
 
-.portfolio .projectList {
+.projectList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10px 0;
+  width: 100vw;
 }
 
-.portfolio .projectList .project {
+.project {
+  position: relative;
   overflow: hidden;
 }
 
-.portfolio .projectList .intro,
-.portfolio .projectList .project,
-.portfolio .projectList .details {
+.intro,
+.project,
+.details {
+  width: calc(20vw - 60px);
+  height: calc(20vw - 60px);
   margin: 10px;
-  width: 400px;
-  height: 400px;
 }
 
-.portfolio .projectList .intro,
-.portfolio .projectList .details {
+.intro,
+.details {
   background-color: #ffffff;
-  border: 0.5px solid #000004;
+  border: 1px solid #000004;
   padding: 20px;
 }
 
-.portfolio .title {
-  margin: 30px 200px;
+.projectImg {
+  position: relative;
+}
+
+.projectImg img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.projectImg img.top:hover {
+  opacity: 0;
+}
+
+.title {
   padding-bottom: 50px;
 }
 
@@ -789,6 +779,12 @@ header .menuShow li a:focus {
 
 .details .detailsTitle p {
   font-size: 1.6rem;
+}
+
+.details .skillsList {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
 }
 
 .details ul {
@@ -832,46 +828,6 @@ header .menuShow li a:focus {
   position: absolute;
   top: -10px;
   right: -10px;
-}
-
-.monsterImg {
-  background-image: url(../assets/portfolio/monster1.png);
-}
-
-.monsterHover {
-  background-image: url(../assets/portfolio/monster2.png);
-}
-
-.obliqueImg {
-  background-image: url(../assets/portfolio/oblique1.png);
-}
-
-.obliqueHover {
-  background-image: url(../assets/portfolio/oblique2.png);
-}
-
-.sportImg {
-  background-image: url(../assets/portfolio/sport1.png);
-}
-
-.sportHover {
-  background-image: url(../assets/portfolio/sport2.png);
-}
-
-.haikuImg {
-  background-image: url(../assets/portfolio/haiku1.png);
-}
-
-.haikuHover {
-  background-image: url(../assets/portfolio/haiku2.png);
-}
-
-.shoeImg {
-  background-image: url(../assets/portfolio/shoe1.png);
-}
-
-.shoeHover {
-  background-image: url(../assets/portfolio/shoe2.png);
 }
 
 .contact {
@@ -1090,6 +1046,12 @@ footer p {
 }
 
 @media (max-width: 525px) {
+  .title {
+    margin: 30px auto !important;
+  }
+  .wrapper {
+    width: 90%;
+  }
   .headerLeft {
     display: none;
   }
@@ -1098,18 +1060,37 @@ footer p {
     background-position: center;
     min-height: 550px;
   }
+  header .headerRight a {
+    display: block;
+    text-align: center;
+  }
+  header .headerRight a i {
+    margin: 20px 0;
+  }
   .minimal header .headerRight {
     background-image: url(../assets/mobile3.png);
+  }
+  .navBarFixed button i {
+    margin: 0;
   }
   .skills ul li {
     width: 80px;
   }
   .portfolio .projectList .intro,
-  .portfolio .projectList .project,
-  .portfolio .projectList .details {
+  .portfolio .projectList .project {
     margin: 10px 0;
-    width: 348px !important;
+    width: 250px !important;
     height: 350px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .portfolio .projectList .project .details,
+  .portfolio .projectList .project .hover {
+    margin: 10px 0;
+    width: 250px !important;
+    height: 250px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .details p {
     font-size: 1.6rem;

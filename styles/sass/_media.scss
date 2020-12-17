@@ -1,3 +1,7 @@
+@media (hover: hover) {
+    
+}
+
 @media (max-width: 950px){
 //header section
 header{
@@ -76,26 +80,46 @@ header{
 }
 
 @media (max-width: 525px) {
-//change background header!
-.headerLeft {
-    display: none;
-}
-
-header{
-    .headerRight {
-        background-image: url(../assets/mobile2.png);
-        background-position: center;
-        min-height: 550px;
+//general styles
+    .title {
+        margin: 30px auto !important;
     }
-}
+    .wrapper {
+        width:90%;
+    }
 
-.minimal {
+//headr styles
+    .headerLeft {
+        display: none;
+    }
     header{
         .headerRight {
-            background-image: url(../assets/mobile3.png);
+            background-image: url(../assets/mobile2.png);
+            background-position: center;
+            min-height: 550px;
+
+            a {
+                display: block;
+                text-align: center;
+
+                i {
+                    margin: 20px 0;
+                }
+            }
         }
     }
-}
+    .minimal {
+        header{
+            .headerRight {
+                background-image: url(../assets/mobile3.png);
+            }
+        }
+    }
+    .navBarFixed {
+		button i {
+			margin: 0;
+		}
+	}
 
 //skills section 
     .skills ul {
@@ -108,11 +132,23 @@ header{
     .portfolio {
         .projectList{
             .intro,
-            .project,
-            .details {
+            .project {
                 margin: 10px 0;
-                width: 348px !important;
+                width: 250px !important;
                 height: 350px !important;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .project {
+                .details,
+                .hover {
+                    margin: 10px 0;
+                    width: 250px !important;
+                    height: 250px !important;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
             }
         }
     }
@@ -158,3 +194,4 @@ header{
         }
     }
 }
+

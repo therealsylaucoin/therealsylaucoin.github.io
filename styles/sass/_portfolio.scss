@@ -1,53 +1,51 @@
-//For all portfolio images
-.project,
-.hover {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-.project {
-    position: relative;
-}
-
-//Portfolio section
 .portfolio {
     padding: 50px 0;
     background-color: $yellow;
+}
 
-    .projectList {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-        padding: 10px 0;
+.projectList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+    
+.project {
+    position: relative;
+    overflow: hidden;
+}
 
-        .project {
-            overflow: hidden;
-        }
+.intro, 
+.project, 
+.details {
+    width: calc(20vw - 60px);
+    height: calc(20vw - 60px);
+    margin: 10px;
+}
 
-        .intro,
-        .project,
-        .details {
-            margin: 10px;
-            width: 400px;
-            height: 400px;
-        }
+.intro,
+.details {
+    background-color: $white;
+    border: 1px solid $black;
+    padding: 20px;
+}
 
-        .intro, 
-        .details {
-            background-color: $white;
-            border: 0.5px solid $black;
-            padding: 20px;
-        }
+.projectImg {
+    position:relative;
+    
+    img {
+        position:absolute;
+        left:0;
+        transition: opacity 1s ease-in-out;
     }
-
-    .title {
-        margin: 30px 200px;
-        padding-bottom: 50px;
+    
+    img.top:hover {
+        opacity: 0;
     }
 }
+
+    .title {
+        padding-bottom: 50px;
+    }
 
 .details {
     display: none;
@@ -68,6 +66,12 @@
         p {
             font-size: 1.6rem;
         }
+    }
+
+    .skillsList {
+        font-family: $fontHeading;
+        font-weight: 700;
+        text-align: center;
     }
 
     ul {
@@ -103,6 +107,7 @@
     }
 }
 
+// for details div
 .visible {
     display: block;
     position: absolute;
@@ -110,38 +115,5 @@
     right: -10px;
 }
 
-//Individual Images
-.monsterImg {
-    background-image: url(../assets/portfolio/monster1.png);
-}
-.monsterHover {
-    background-image: url(../assets/portfolio/monster2.png);
-}
 
-.obliqueImg {
-    background-image: url(../assets/portfolio/oblique1.png);
-}
-.obliqueHover {
-    background-image: url(../assets/portfolio/oblique2.png);
-}
 
-.sportImg {
-    background-image: url(../assets/portfolio/sport1.png);
-}
-.sportHover {
-    background-image: url(../assets/portfolio/sport2.png);
-}
-
-.haikuImg {
-    background-image: url(../assets/portfolio/haiku1.png);
-}
-.haikuHover {
-    background-image: url(../assets/portfolio/haiku2.png);
-}
-
-.shoeImg {
-    background-image: url(../assets/portfolio/shoe1.png);
-}
-.shoeHover {
-    background-image: url(../assets/portfolio/shoe2.png);
-}
