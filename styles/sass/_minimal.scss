@@ -45,6 +45,15 @@
         }
     }
 
+    .projectImg {
+        .minImg {
+            display: block;
+        }
+        .orgImg {
+            display: none;
+        }
+    }
+
     .getInTouch {
         a {
             border: none;
