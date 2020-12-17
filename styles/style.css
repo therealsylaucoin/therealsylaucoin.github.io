@@ -328,6 +328,14 @@ img {
   border-bottom: 1px solid #C4C4C4;
 }
 
+.minimal .projectImg .minImg {
+  display: block;
+}
+
+.minimal .projectImg .orgImg {
+  display: none;
+}
+
 .minimal .getInTouch a {
   border: none;
 }
@@ -767,6 +775,10 @@ header .menuShow li a:focus {
 
 .projectImg img.top:hover {
   opacity: 0;
+}
+
+.projectImg .minImg {
+  display: none;
 }
 
 .title {
