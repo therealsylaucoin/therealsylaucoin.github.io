@@ -1,10 +1,15 @@
 .portfolio {
     padding: 50px 0;
     background-color: $yellow;
+    h2 {
+        margin: 0 auto;
+    }
 }
 
 .projectList {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100vw;
 }
@@ -12,14 +17,21 @@
 .project {
     position: relative;
     overflow: hidden;
+    a {
+        font-weight: 700;
+        color: $black;
+    }
 }
 
 .intro, 
 .project, 
-.details {
-    width: calc(20vw - 60px);
-    height: calc(20vw - 60px);
-    margin: 10px;
+.details,
+.projectImg {
+    height: 455px;
+    width: 455px;
+    min-width: 250px;
+    min-height: 250px;
+    margin: 5px;
 }
 
 .intro,
@@ -48,24 +60,12 @@
     }
 
 .details {
-    display: none;
+    position: absolute;
+    top: -5px;
+    right: -5px;
 
-    .detailsTitle {
-        display: flex;
-        justify-content: space-between;
-
-        button {
-            background-color: $white;
-            border: none;
-        }
-
-        h3 {
-            margin: 0;
-        }
-
-        p {
-            font-size: 1.6rem;
-        }
+    h3 {
+        margin: 0 auto;
     }
 
     .skillsList {
@@ -110,9 +110,6 @@
 // for details div
 .visible {
     display: block;
-    position: absolute;
-    top: -10px;
-    right: -10px;
 }
 
 

@@ -88,11 +88,21 @@ header{
         width:90%;
     }
 
-//headr styles
-    .headerLeft {
+//header styles
+    .headerLeft,
+    .heading, .logoWord {
         display: none;
     }
     header{
+
+        h1 {
+            font-weight: 700;
+            font-size: 5rem;
+        }
+        .headerText {
+            padding-top: 100px;
+        }
+
         .headerRight {
             background-image: url(../assets/mobile2.png);
             background-position: center;
@@ -130,26 +140,43 @@ header{
 
 //portfolio section
     .portfolio {
+
+        .project,
+        .details {
+            position: static;
+        }
+
         .projectList{
-            .intro,
             .project {
-                margin: 10px 0;
-                width: 250px !important;
-                height: 350px !important;
-                background-size: contain;
-                background-repeat: no-repeat;
+                width: 322px !important;
+                height: fit-content;
             }
 
             .project {
-                .details,
-                .hover {
-                    margin: 10px 0;
-                    width: 250px !important;
-                    height: 250px !important;
-                    background-size: contain;
-                    background-repeat: no-repeat;
+                .details {
+                    width: 320px !important;
+                    margin: 5px 0;
+                    padding: 15px;
+                    p{
+                        font-size: 1.6rem;
+                    }
+                }
+                .projectImg {
+                    width: 320px;
+                    height: 320px;
                 }
             }
+        }
+    }
+
+    .intro {
+        border: none;
+        background-color: transparent;
+        min-height: fit-content;
+        height: 175px;
+
+        p:first-of-type{
+            display: none;
         }
     }
 
@@ -157,15 +184,15 @@ header{
         p {
             font-size: 1.6rem;
         }
+
+        ul {
+            flex-wrap: nowrap;
+        }
     
         li {
             padding: 10px;
             margin: 5px 10px;
         }
-    }
-
-    .visible {
-        right: 0px;
     }
     
 //contact section

@@ -325,7 +325,7 @@ img {
 
 .minimal .flexContainer a {
   background-color: transparent;
-  border-bottom: 1px solid #BEBEC1;
+  border-bottom: 1px solid #C4C4C4;
 }
 
 .minimal .getInTouch a {
@@ -611,13 +611,13 @@ header .menuShow li a:focus {
   width: 120px;
   left: -130px;
   top: 15px;
-  background-color: #BEBEC1;
+  background-color: #C4C4C4;
   content: '';
 }
 
 .about {
   color: #000004;
-  background-color: #BEBEC1;
+  background-color: #C4C4C4;
 }
 
 .about h2 {
@@ -699,7 +699,7 @@ header .menuShow li a:focus {
 }
 
 .skills ul:last-of-type {
-  color: #BEBEC1;
+  color: #C4C4C4;
 }
 
 .portfolio {
@@ -707,10 +707,20 @@ header .menuShow li a:focus {
   background-color: #edff00;
 }
 
+.portfolio h2 {
+  margin: 0 auto;
+}
+
 .projectList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100vw;
@@ -721,12 +731,20 @@ header .menuShow li a:focus {
   overflow: hidden;
 }
 
+.project a {
+  font-weight: 700;
+  color: #000004;
+}
+
 .intro,
 .project,
-.details {
-  width: calc(20vw - 60px);
-  height: calc(20vw - 60px);
-  margin: 10px;
+.details,
+.projectImg {
+  height: 455px;
+  width: 455px;
+  min-width: 250px;
+  min-height: 250px;
+  margin: 5px;
 }
 
 .intro,
@@ -756,29 +774,13 @@ header .menuShow li a:focus {
 }
 
 .details {
-  display: none;
+  position: absolute;
+  top: -5px;
+  right: -5px;
 }
 
-.details .detailsTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.details .detailsTitle button {
-  background-color: #ffffff;
-  border: none;
-}
-
-.details .detailsTitle h3 {
-  margin: 0;
-}
-
-.details .detailsTitle p {
-  font-size: 1.6rem;
+.details h3 {
+  margin: 0 auto;
 }
 
 .details .skillsList {
@@ -825,9 +827,6 @@ header .menuShow li a:focus {
 
 .visible {
   display: block;
-  position: absolute;
-  top: -10px;
-  right: -10px;
 }
 
 .contact {
@@ -890,7 +889,7 @@ header .menuShow li a:focus {
 
 .getInTouch a {
   background-color: transparent;
-  color: #BEBEC1;
+  color: #C4C4C4;
   font-size: 3rem;
 }
 
@@ -941,13 +940,13 @@ header .menuShow li a:focus {
 .getInTouch form input[type="text"],
 .getInTouch form input[type="email"] {
   width: 45%;
-  border-bottom: 1px solid #BEBEC1;
+  border-bottom: 1px solid #C4C4C4;
 }
 
 .getInTouch form textarea {
   width: 100%;
   resize: none;
-  border: 1px solid #BEBEC1;
+  border: 1px solid #C4C4C4;
   height: 200px;
 }
 
@@ -967,22 +966,22 @@ header .menuShow li a:focus {
 }
 
 .getInTouch form ::-webkit-input-placeholder {
-  color: #BEBEC1;
+  color: #C4C4C4;
   opacity: 1;
 }
 
 .getInTouch form :-ms-input-placeholder {
-  color: #BEBEC1;
+  color: #C4C4C4;
   opacity: 1;
 }
 
 .getInTouch form ::-ms-input-placeholder {
-  color: #BEBEC1;
+  color: #C4C4C4;
   opacity: 1;
 }
 
 .getInTouch form ::placeholder {
-  color: #BEBEC1;
+  color: #C4C4C4;
   opacity: 1;
 }
 
@@ -1052,8 +1051,16 @@ footer p {
   .wrapper {
     width: 90%;
   }
-  .headerLeft {
+  .headerLeft,
+  .heading, .logoWord {
     display: none;
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 5rem;
+  }
+  header .headerText {
+    padding-top: 100px;
   }
   header .headerRight {
     background-image: url(../assets/mobile2.png);
@@ -1076,31 +1083,49 @@ footer p {
   .skills ul li {
     width: 80px;
   }
-  .portfolio .projectList .intro,
-  .portfolio .projectList .project {
-    margin: 10px 0;
-    width: 250px !important;
-    height: 350px !important;
-    background-size: contain;
-    background-repeat: no-repeat;
+  .portfolio .project,
+  .portfolio .details {
+    position: static;
   }
-  .portfolio .projectList .project .details,
-  .portfolio .projectList .project .hover {
-    margin: 10px 0;
-    width: 250px !important;
-    height: 250px !important;
-    background-size: contain;
-    background-repeat: no-repeat;
+  .portfolio .projectList .project {
+    width: 322px !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .portfolio .projectList .project .details {
+    width: 320px !important;
+    margin: 5px 0;
+    padding: 15px;
+  }
+  .portfolio .projectList .project .details p {
+    font-size: 1.6rem;
+  }
+  .portfolio .projectList .project .projectImg {
+    width: 320px;
+    height: 320px;
+  }
+  .intro {
+    border: none;
+    background-color: transparent;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: 175px;
+  }
+  .intro p:first-of-type {
+    display: none;
   }
   .details p {
     font-size: 1.6rem;
   }
+  .details ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
   .details li {
     padding: 10px;
     margin: 5px 10px;
-  }
-  .visible {
-    right: 0px;
   }
   form {
     -webkit-box-align: center;
