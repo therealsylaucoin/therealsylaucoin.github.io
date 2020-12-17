@@ -94,13 +94,14 @@ header{
         display: none;
     }
     header{
+        height:100vh;
 
         h1 {
             font-weight: 700;
             font-size: 5rem;
         }
         .headerText {
-            padding-top: 100px;
+            padding-top: 60px;
         }
 
         .headerRight {
@@ -175,7 +176,7 @@ header{
         min-height: fit-content;
         height: 175px;
 
-        p:first-of-type{
+        p:nth-of-type(2){
             display: none;
         }
     }

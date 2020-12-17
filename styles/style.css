@@ -1067,12 +1067,15 @@ footer p {
   .heading, .logoWord {
     display: none;
   }
+  header {
+    height: 100vh;
+  }
   header h1 {
     font-weight: 700;
     font-size: 5rem;
   }
   header .headerText {
-    padding-top: 100px;
+    padding-top: 60px;
   }
   header .headerRight {
     background-image: url(../assets/mobile2.png);
@@ -1125,7 +1128,7 @@ footer p {
     min-height: fit-content;
     height: 175px;
   }
-  .intro p:first-of-type {
+  .intro p:nth-of-type(2) {
     display: none;
   }
   .details p {
