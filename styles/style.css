@@ -1148,6 +1148,9 @@ footer p {
   .navBarFixed button i {
     margin: 0;
   }
+  .about h2, .about h3 {
+    font-size: 2rem;
+  }
   .skills ul li {
     width: 80px;
   }
