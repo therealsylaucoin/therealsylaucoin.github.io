@@ -783,7 +783,6 @@ header .menuShow li a:focus {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 90vw;
 }
 
 .project {
