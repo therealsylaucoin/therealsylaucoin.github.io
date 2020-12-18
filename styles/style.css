@@ -630,7 +630,11 @@ header .menuShow li a:focus {
 
 .about h2 {
   width: 50%;
-  margin: 30px auto;
+  margin: 0 auto;
+}
+
+.about h3 {
+  margin: 0 auto;
 }
 
 .about button {
@@ -646,6 +650,10 @@ header .menuShow li a:focus {
   color: #000004;
   background-color: #ffffff;
   border: 2px solid #000004;
+}
+
+.about p {
+  text-align: left;
 }
 
 .about .title {
@@ -665,6 +673,10 @@ header .menuShow li a:focus {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-left: 200px;
+}
+
+.skills p {
+  text-align: left;
 }
 
 .skills ul {
@@ -841,6 +853,7 @@ header .menuShow li a:focus {
 @media (hover: hover) {
   .projectImg img.top:hover {
     opacity: 0;
+    cursor: pointer;
   }
 }
 
