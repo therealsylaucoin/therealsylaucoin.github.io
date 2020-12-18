@@ -238,6 +238,7 @@ html {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scrollbar-color: #000004 #ffffff;
 }
 
 .wrapper {
@@ -263,6 +264,8 @@ ul {
 
 a {
   text-decoration: none;
+  background-color: #edff00;
+  color: #000004;
 }
 
 img {
@@ -283,6 +286,15 @@ img {
   left: 10px;
   color: #000004;
   background-color: #edff00;
+}
+
+.minimal header a {
+  border: none;
+}
+
+.minimal a {
+  background-color: transparent;
+  border-bottom: 1px solid #C4C4C4;
 }
 
 .minimal h1 {
@@ -321,11 +333,6 @@ img {
 
 .minimal .about, .minimal .portfolio {
   background-color: #ffffff;
-}
-
-.minimal .flexContainer a {
-  background-color: transparent;
-  border-bottom: 1px solid #C4C4C4;
 }
 
 .minimal .projectImg .minImg {
@@ -395,6 +402,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+header a {
+  background-color: transparent;
 }
 
 header .headerLeft,
@@ -611,6 +622,9 @@ header .menuShow li a:focus {
   width: -moz-fit-content;
   width: fit-content;
   margin: 30px 140px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
 }
 
 .title::before {
@@ -624,13 +638,13 @@ header .menuShow li a:focus {
 }
 
 .about {
-  color: #000004;
-  background-color: #C4C4C4;
+  background-color: #E6E6E6;
 }
 
 .about .cursor {
   -webkit-animation: flashingText 1s infinite;
           animation: flashingText 1s infinite;
+  font-weight: 300;
 }
 
 @-webkit-keyframes flashingText {
@@ -699,10 +713,11 @@ header .menuShow li a:focus {
 
 .about .title {
   margin: 30px auto;
+  padding: 0;
 }
 
-.about .title::before {
-  background-color: #edff00;
+.about .aboutTitle {
+  margin: 50px auto;
 }
 
 .skills {
@@ -917,11 +932,6 @@ header .menuShow li a:focus {
 
 .flexContainer p {
   width: 50%;
-}
-
-.flexContainer a {
-  background-color: #edff00;
-  color: #000004;
 }
 
 .getInTouch {

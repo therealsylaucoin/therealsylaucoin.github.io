@@ -12,6 +12,9 @@
     position: relative;
     width: fit-content;
     margin: 30px 140px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: $fontHeading;
 }
 
 .title::before {

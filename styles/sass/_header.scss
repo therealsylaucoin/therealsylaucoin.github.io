@@ -1,6 +1,10 @@
 header {
 	display: flex;
 
+	a {
+		background-color: transparent;
+	}
+
 	.headerLeft,
 	.headerRight {
 		height: 100vh;
@@ -12,6 +16,7 @@ header {
 		width: 30vw;
 		min-width: 550px;
 		background-image: url(../assets/headerLeftMono.png);
+		// background-color: #E6E6E6;
 		position: relative;
 		background-position: right;
 	}
@@ -51,15 +56,6 @@ header {
 				margin: 10px;
 				color: $white;
 			}
-
-			// button {
-			// 	display: block;
-			// 	border: none;
-			// 	background-color: transparent;
-			// 	color: $white;
-			// 	font-family: $font;
-			// 	cursor: pointer;
-			// }
 		}
 	}
 

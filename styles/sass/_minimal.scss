@@ -1,4 +1,13 @@
 .minimal {
+    header a {
+        border: none;
+    }
+
+    a {
+        background-color: transparent;
+        border-bottom: 1px solid $grey;
+    }
+
     h1 {
         color: $black !important;
     }
@@ -36,13 +45,6 @@
 
     .about, .portfolio {
         background-color: $white;
-    }
-
-    .flexContainer {
-        a {
-            background-color: transparent;
-            border-bottom: 1px solid $grey;
-        }
     }
 
     .projectImg {

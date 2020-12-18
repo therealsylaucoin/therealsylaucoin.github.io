@@ -1,10 +1,11 @@
 // About section styles
 .about {
-    color: $black;
-    background-color: $grey;
+    // color: $black;
+    background-color: #E6E6E6;
 
     .cursor {
         animation: flashingText 1s infinite;
+        font-weight: 300;
     }
 
     @keyframes flashingText{
@@ -46,9 +47,10 @@
 
     .title {
         margin: 30px auto;
+        padding: 0;
+    }
 
-        &::before {
-            background-color: $yellow;
-        }
+    .aboutTitle {
+        margin: 50px auto;
     }
 }
