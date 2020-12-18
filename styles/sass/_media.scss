@@ -75,7 +75,7 @@ header{
     }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 525px){
 //general styles
     .title {
         margin: 30px auto !important;
@@ -134,7 +134,6 @@ header{
         }
     }
 
-
 //skills section 
     .skills ul {
         li {
@@ -152,13 +151,13 @@ header{
 
         .projectList{
             .project {
-                width: 322px !important;
+                width: 322px;
                 height: fit-content;
             }
 
             .project {
                 .details {
-                    width: 320px !important;
+                    width: 320px;
                     margin: 5px 0;
                     padding: 15px;
                     p{
@@ -222,6 +221,32 @@ header{
     .flexContainer {
         p {
             width: 100%;
+        }
+    }
+}
+
+
+@media(max-width: 390px) {
+    .aboutTitle{
+        height: 180px;
+    }
+
+    .portfolio {
+        .projectList{
+            .project {
+                width: 277px !important;
+            }
+
+            .project {
+                .details {
+                    width: 277px !important;
+                    height: fit-content
+                }
+                .projectImg {
+                    width: 275px;
+                    height: 275px;
+                }
+            }
         }
     }
 }

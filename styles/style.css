@@ -1158,13 +1158,13 @@ footer p {
     position: static;
   }
   .portfolio .projectList .project {
-    width: 322px !important;
+    width: 322px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
   .portfolio .projectList .project .details {
-    width: 320px !important;
+    width: 320px;
     margin: 5px 0;
     padding: 15px;
   }
@@ -1224,5 +1224,24 @@ footer p {
   }
   .flexContainer p {
     width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .aboutTitle {
+    height: 180px;
+  }
+  .portfolio .projectList .project {
+    width: 277px !important;
+  }
+  .portfolio .projectList .project .details {
+    width: 277px !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .portfolio .projectList .project .projectImg {
+    width: 275px;
+    height: 275px;
   }
 }
