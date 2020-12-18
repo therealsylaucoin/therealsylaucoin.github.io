@@ -1,6 +1,0 @@
-Poppins (Heading) - https://fonts.google.com/specimen/Poppins
-
-Open+sans (Para) - https://fonts.google.com/specimen/Open+Sans
-
-
-Font Awesome (Icons)   -   http://fortawesome.github.io/Font-Awesome/
