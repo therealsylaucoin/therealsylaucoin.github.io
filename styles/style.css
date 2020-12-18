@@ -610,7 +610,7 @@ header .menuShow li a:focus {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 30px 200px;
+  margin: 30px 140px;
 }
 
 .title::before {
@@ -626,6 +626,47 @@ header .menuShow li a:focus {
 .about {
   color: #000004;
   background-color: #C4C4C4;
+}
+
+.about .cursor {
+  -webkit-animation: flashingText 1s infinite;
+          animation: flashingText 1s infinite;
+}
+
+@-webkit-keyframes flashingText {
+  0% {
+    color: #000004;
+  }
+  49% {
+    color: #000004;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #000004;
+  }
+}
+
+@keyframes flashingText {
+  0% {
+    color: #000004;
+  }
+  49% {
+    color: #000004;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #000004;
+  }
 }
 
 .about h2 {
@@ -672,7 +713,6 @@ header .menuShow li a:focus {
 .skills .title {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-left: 140px;
 }
 
 .skills p {
@@ -798,6 +838,7 @@ header .menuShow li a:focus {
   position: absolute;
   top: -5px;
   right: -5px;
+  cursor: pointer;
 }
 
 .details h3 {
@@ -859,10 +900,6 @@ header .menuShow li a:focus {
 
 .contact {
   padding: 50px 0;
-}
-
-.contact .title {
-  margin: 30px 200px;
 }
 
 .contact h2 {

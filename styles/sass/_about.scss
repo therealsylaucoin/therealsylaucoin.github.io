@@ -3,6 +3,18 @@
     color: $black;
     background-color: $grey;
 
+    .cursor {
+        animation: flashingText 1s infinite;
+    }
+
+    @keyframes flashingText{
+        0%  {   color: $black;}
+        49% {   color: $black; }
+        60% {   color: transparent; }
+        99% {   color:transparent;  }
+        100%{   color: $black;    }
+    } 
+    
     h2 {
         width: 50%;
         margin: 0 auto;

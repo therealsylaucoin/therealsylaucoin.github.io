@@ -101,6 +101,7 @@
 
                         <h2>I'm a 
                         <span class="type"></span>
+                        <span class="cursor">|</span>
                         </h2>   
 
                     <h3>from Montreal and Ottawa, Canada.</h3>
@@ -160,192 +161,196 @@
         <!-- Portfolio SECTION here! -->
         <section class="portfolio" id="portfolio" data-aos="fade-in" data-aos-duration="2000">
 
-            <div class="title">Portfolio</div>
+            <div class="wrapper">
 
-            <ul class="wrapper projectList">
+                <div class="title">Portfolio</div>
 
-                <!-- general project info -->
-                <li class="intro">
-                    <h2>My work</h2>
-                    <p>You can find all my projects by checking out my <a href="https://github.com/therealsylaucoin">gitHub page</a>. Here are some of my favourites.</p>
-                    <p>Select the image to see a short description of the app or site, the skills and frameworks it uses and links to the gitHub repo and live site. <p>
-                </li>
+                <ul class="projectList">
 
-                <!-- Monster Mash project-->
-                <li class="project"  data-name="monster" tabIndex="0">
+                    <!-- general project info -->
+                    <li class="intro">
+                        <h2>My work</h2>
+                        <p>You can find all my projects by checking out my <a href="https://github.com/therealsylaucoin">gitHub page</a>. Here are some of my favourites.</p>
+                        <p>Select the image to see a short description of the app or site, the skills and frameworks it uses and links to the gitHub repo and live site. <p>
+                    </li>
 
-                    <!-- Div for images -->
-                    <div class="projectImg" id="crossFade">
-                        <img class="bottom"  src='./assets/portfolio/monster2.png' alt="first image for monster mash project">
-                        <img class="top orgImg" src='./assets/portfolio/monster1.png' alt="first image for monster mash project">
-                        <img class="top minImg" src='./assets/portfolio/monsterMin.png' alt="first image for monster mash project">
-                    </div>
+                    <!-- Monster Mash project-->
+                    <li class="project"  data-name="monster" tabIndex="0">
 
-                    <!-- Div for Info (show on click) -->
-                    <div class="details monsterDetails animate__animated animate__fadeOutDown"> 
+                        <!-- Div for images -->
+                        <div class="projectImg" id="crossFade">
+                            <img class="bottom"  src='./assets/portfolio/monster2.png' alt="first image for monster mash project">
+                            <img class="top orgImg" src='./assets/portfolio/monster1.png' alt="first image for monster mash project">
+                            <img class="top minImg" src='./assets/portfolio/monsterMin.png' alt="first image for monster mash project">
+                        </div>
 
-                        <h3>Monster Mash</h3>
+                        <!-- Div for Info (show on click) -->
+                        <div class="details monsterDetails animate__animated animate__fadeOutDown"> 
 
-                        <p>Heavily inspired by one of my favourite songs, the Monster Mash.</p>
-                        <p>A classic memory card game, which includes two modes (friendly and scary), three difficulty levels and a move counter.</p>
+                            <h3>Monster Mash</h3>
 
-                        <p class="skillsList">jQuery / SASS / HTML</p>
+                            <p>Heavily inspired by one of my favourite songs, the Monster Mash.</p>
+                            <p>A classic memory card game, which includes two modes (friendly and scary), three difficulty levels and a move counter.</p>
 
-                        <ul class="links">
-                            <li>
-                                <a href="https://themonstermash.netlify.app/" target="_blank" rel="noreferrer">Live</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/therealsylaucoin/monsterMash" target="_blank"
-                                    rel="noreferrer">github</a>
-                            </li>
-                        </ul>
+                            <p class="skillsList">jQuery / SASS / HTML</p>
 
-                    </div>
+                            <ul class="links">
+                                <li>
+                                    <a href="https://themonstermash.netlify.app/" target="_blank" rel="noreferrer">Live</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/therealsylaucoin/monsterMash" target="_blank"
+                                        rel="noreferrer">github</a>
+                                </li>
+                            </ul>
 
-                </li>
+                        </div>
 
-                <!-- Oblique Strategies project  -->
-                <li class="project" tabIndex="0" data-name="oblique">
+                    </li>
 
-                    <!-- Div for images -->
-                    <div class="projectImg" id="crossFade">
-                        <img class="bottom"  src='./assets/portfolio/oblique2.png' alt="second image for oblique strategies project">
-                        <img class="top orgImg" src='./assets/portfolio/oblique1.png'  alt="first image for oblique strategies project">
-                        <img class="top minImg" src='./assets/portfolio/obliqueMin.png'  alt="first image for oblique strategies project">
-                    </div>
-                
-                    <!-- Div for Info (show on click)-->
-                    <div class="details obliqueDetails animate__animated animate__fadeOutDown">
+                    <!-- Oblique Strategies project  -->
+                    <li class="project" tabIndex="0" data-name="oblique">
 
-                        <h3>Oblique Strategies</h3>
+                        <!-- Div for images -->
+                        <div class="projectImg" id="crossFade">
+                            <img class="bottom"  src='./assets/portfolio/oblique2.png' alt="second image for oblique strategies project">
+                            <img class="top orgImg" src='./assets/portfolio/oblique1.png'  alt="first image for oblique strategies project">
+                            <img class="top minImg" src='./assets/portfolio/obliqueMin.png'  alt="first image for oblique strategies project">
+                        </div>
+                    
+                        <!-- Div for Info (show on click)-->
+                        <div class="details obliqueDetails animate__animated animate__fadeOutDown">
 
-                        <p>A take on Brian Eno's timeless lateral thinking deck.</p>
-                        <p>Allows the user to draw a random card from the Oblique Strategies, or from Collective Strategies deck which is populated by user submissions. The user can also tweet the strategy they picked.</p>
+                            <h3>Oblique Strategies</h3>
 
-                        <p class="skillsList">React / REST Api / Firebase / SASS / HTML</p>
+                            <p>A take on Brian Eno's timeless lateral thinking deck.</p>
+                            <p>Allows the user to draw a random card from the Oblique Strategies, or from Collective Strategies deck which is populated by user submissions. The user can also tweet the strategy they picked.</p>
 
-                        <ul class="links">
-                            <li>
-                                <a href="https://obliquecollective.netlify.app/" target="_blank" rel="noreferrer">Live</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/therealsylaucoin/obliqueCollective" target="_blank" rel="noreferrer">github</a>
-                            </li>
-                        </ul>
+                            <p class="skillsList">React / REST Api / Firebase / SASS / HTML</p>
 
-                    </div>
+                            <ul class="links">
+                                <li>
+                                    <a href="https://obliquecollective.netlify.app/" target="_blank" rel="noreferrer">Live</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/therealsylaucoin/obliqueCollective" target="_blank" rel="noreferrer">github</a>
+                                </li>
+                            </ul>
 
-                </li>
+                        </div>
 
-                <!-- Sport Spot project -->
-                <li class="project" tabIndex="0" data-name="sport">
+                    </li>
 
-                    <!-- Div for images -->
-                    <div class="projectImg" id="crossFade">
-                        <img class="bottom"  src='./assets/portfolio/sport2.png' alt="second image for sports spot project">
-                        <img class="top orgImg" src='./assets/portfolio/sport1.png'  alt="first image for sport spot project">
-                        <img class="top minImg" src='./assets/portfolio/sportMin.png'  alt="first image for sport spot project">
-                    </div>
-                
-                    <!-- Div for Info (show on click) -->
-                    <div class="details sportDetails animate__animated animate__fadeOutDown">
+                    <!-- Sport Spot project -->
+                    <li class="project" tabIndex="0" data-name="sport">
 
-                        <h3>Sport Spot</h3>
+                        <!-- Div for images -->
+                        <div class="projectImg" id="crossFade">
+                            <img class="bottom"  src='./assets/portfolio/sport2.png' alt="second image for sports spot project">
+                            <img class="top orgImg" src='./assets/portfolio/sport1.png'  alt="first image for sport spot project">
+                            <img class="top minImg" src='./assets/portfolio/sportMin.png'  alt="first image for sport spot project">
+                        </div>
+                    
+                        <!-- Div for Info (show on click) -->
+                        <div class="details sportDetails animate__animated animate__fadeOutDown">
 
-                        <p>A pair programming project in collaboration with <i class="fas fa-baseball-ball"></i> <a href="https://github.com/vhok" target="_blank" rel="noreferrer">Victor Hok</a>.</p>
-                        <p>This site uses geolocation to provide the user with sports facilities close to them for a variety of sports. Should the user choose to opt out of sharing their location, facilities are provided for selected cities.</p>
+                            <h3>Sport Spot</h3>
 
-                        <p class="skillsList">jQuery / SASS / HTML</p>
+                            <p>A pair programming project in collaboration with <i class="fas fa-baseball-ball"></i> <a href="https://github.com/vhok" target="_blank" rel="noreferrer">Victor Hok</a>.</p>
+                            <p>This site uses geolocation to provide the user with sports facilities close to them for a variety of sports. Should the user choose to opt out of sharing their location, facilities are provided for selected cities.</p>
 
-                        <ul class="links">
-                            <li>
-                                <a href="https://thesportspot.netlify.app/" target="_blank" rel="noreferrer">Live</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/socoin-and-vhok/syl-aucoin-and-victor-hok-project4" target="_blank" rel="noreferrer">github</a>
-                            </li>
-                        </ul>
+                            <p class="skillsList">jQuery / SASS / HTML</p>
 
-                    </div>
+                            <ul class="links">
+                                <li>
+                                    <a href="https://thesportspot.netlify.app/" target="_blank" rel="noreferrer">Live</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/socoin-and-vhok/syl-aucoin-and-victor-hok-project4" target="_blank" rel="noreferrer">github</a>
+                                </li>
+                            </ul>
 
-                </li>
+                        </div>
 
-                <!-- Haiku Ahoy project -->
-                <li class="project" tabIndex="0" data-name="haiku">
+                    </li>
 
-                    <!-- Div for images -->
-                    <div class="projectImg" id="crossFade">
-                        <img class="bottom" src='./assets/portfolio/haiku2.png' alt="second image for haiku ahoy project" alt="second image for haiku ahoy project">
-                        <img class="top orgImg" src='./assets/portfolio/haiku1.png' alt="first image for haiku ahoy project">
-                        <img class="top minImg" src='./assets/portfolio/haikuMin.png' alt="first image for haiku ahoy project">
-                    </div>
-                
-                    <!-- Div for Info (show on click) DONT FORGET TO RE_ADD FADEDOWN -->
-                    <div class="details haikuDetails animate__animated animate__fadeOutDown">
+                    <!-- Haiku Ahoy project -->
+                    <li class="project" tabIndex="0" data-name="haiku">
 
-                        <h3>Haiku Ahoy</h3>
+                        <!-- Div for images -->
+                        <div class="projectImg" id="crossFade">
+                            <img class="bottom" src='./assets/portfolio/haiku2.png' alt="second image for haiku ahoy project" alt="second image for haiku ahoy project">
+                            <img class="top orgImg" src='./assets/portfolio/haiku1.png' alt="first image for haiku ahoy project">
+                            <img class="top minImg" src='./assets/portfolio/haikuMin.png' alt="first image for haiku ahoy project">
+                        </div>
+                    
+                        <!-- Div for Info (show on click) DONT FORGET TO RE_ADD FADEDOWN -->
+                        <div class="details haikuDetails animate__animated animate__fadeOutDown">
 
-                        <p>A group project in collaboration with <i class="fas fa-anchor"></i> <a href="https://github.com/Yuisdrawing" target="_blank" rel="noreferrer">Christina Yu</a>, <i class="fas fa-anchor"></i> <a href="https://github.com/daveratcliffe" target="_blank" rel="noreferrer">Dave Ratcliffe</a> and <i class="fas fa-anchor"></i> <a href="https://github.com/barmashev48" target="_blank" rel="noreferrer">Ermek Barmashev</a>.</p>
-                        <p>A haiku generator that allows the user to input the first word of each verse and then provides suggestions for the following words based on an api call. The user can also save their haiku to a Firebase database.</p>
+                            <h3>Haiku Ahoy</h3>
 
-                        <p class="skillsList">React / REST Api / Firebase / CSS / HTML</p>
+                            <p>A group project in collaboration with <i class="fas fa-anchor"></i> <a href="https://github.com/Yuisdrawing" target="_blank" rel="noreferrer">Christina Yu</a>, <i class="fas fa-anchor"></i> <a href="https://github.com/daveratcliffe" target="_blank" rel="noreferrer">Dave Ratcliffe</a> and <i class="fas fa-anchor"></i> <a href="https://github.com/barmashev48" target="_blank" rel="noreferrer">Ermek Barmashev</a>.</p>
+                            <p>A haiku generator that allows the user to input the first word of each verse and then provides suggestions for the following words based on an api call. The user can also save their haiku to a Firebase database.</p>
 
-                        <ul class="links">
-                            <li>
-                                <a href="https://feelin-so-fly-like-a-g6.github.io/project-6/" target="_blank" rel="noreferrer">Live</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/feelin-so-fly-like-a-g6/project-6" target="_blank" rel="noreferrer">github</a>
-                            </li>
-                        </ul>
+                            <p class="skillsList">React / REST Api / Firebase / CSS / HTML</p>
 
-                    </div>
+                            <ul class="links">
+                                <li>
+                                    <a href="https://feelin-so-fly-like-a-g6.github.io/project-6/" target="_blank" rel="noreferrer">Live</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/feelin-so-fly-like-a-g6/project-6" target="_blank" rel="noreferrer">github</a>
+                                </li>
+                            </ul>
 
-                </li>
+                        </div>
 
-                <!-- Shoe Kloset project  -->
-                <li class="project" tabIndex="0" data-name="shoe">
+                    </li>
 
-                    <!-- Div for images -->
-                    <div class="projectImg" id="crossFade">
-                        <img class="bottom"  src='./assets/portfolio/shoe2.png' alt="second image for shoe kloset project">
-                        <img class="top orgImg" src='./assets/portfolio/shoe1.png'  alt="first image for shoe kloset project">
-                        <img class="top minImg" src='./assets/portfolio/shoeMin.png'  alt="first image for shoe kloset project">
-                    </div>
-                
-                    <!-- Div for Info (show on click) DONT FORGET TO RE_ADD FADEDOWN -->
-                    <div class="details shoeDetails animate__animated animate__fadeOutDown">
+                    <!-- Shoe Kloset project  -->
+                    <li class="project" tabIndex="0" data-name="shoe">
 
-                        <h3>Shoe Kloset</h3>
+                        <!-- Div for images -->
+                        <div class="projectImg" id="crossFade">
+                            <img class="bottom"  src='./assets/portfolio/shoe2.png' alt="second image for shoe kloset project">
+                            <img class="top orgImg" src='./assets/portfolio/shoe1.png'  alt="first image for shoe kloset project">
+                            <img class="top minImg" src='./assets/portfolio/shoeMin.png'  alt="first image for shoe kloset project">
+                        </div>
+                    
+                        <!-- Div for Info (show on click) DONT FORGET TO RE_ADD FADEDOWN -->
+                        <div class="details shoeDetails animate__animated animate__fadeOutDown">
 
-                        <p>A fully responsive three page PSD conversion using flexbox and grid.</p>
+                            <h3>Shoe Kloset</h3>
 
-                        <p class="skillsList">jQuery / SASS / HTML</p>
+                            <p>A fully responsive three page PSD conversion using flexbox and grid.</p>
 
-                        <ul class="links">
-                            <li>
-                                <a href="https://sylshoekloset.netlify.app/" target="_blank" rel="noreferrer">Live</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/therealsylaucoin/shoeKloset" target="_blank" rel="noreferrer">github</a>
-                            </li>
-                        </ul>
+                            <p class="skillsList">jQuery / SASS / HTML</p>
 
-                    </div>
+                            <ul class="links">
+                                <li>
+                                    <a href="https://sylshoekloset.netlify.app/" target="_blank" rel="noreferrer">Live</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/therealsylaucoin/shoeKloset" target="_blank" rel="noreferrer">github</a>
+                                </li>
+                            </ul>
 
-                </li>
+                        </div>
 
-            </ul>
+                    </li>
+
+                </ul>
+
+            </div>
 
         </section>
 
         <!-- Contact SECTION here! -->
-        <section class="contact" id="contact" data-aos="fade-in" data-aos-duration="2000">
+        <section class="contact wrapper" id="contact" data-aos="fade-in" data-aos-duration="2000">
 
             <div class="title">Contact</div>
 
-            <div class="flexContainer wrapper">
+            <div class="flexContainer">
 
                 <h2>Get In Touch</h2>
 
@@ -357,8 +362,6 @@
                 <!-- Calendly link widget end -->
                 or send me a message here. You can also find me on social media.
                 </p>
-
-
 
                 <section class="getInTouch">
 
