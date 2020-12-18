@@ -49,10 +49,6 @@
         left:0;
         transition: opacity 1s ease-in-out;
     }
-    
-    img.top:hover {
-        opacity: 0;
-    }
 
     .minImg {
         display: none;
@@ -64,12 +60,13 @@
     }
 
 .details {
+    display: none;
     position: absolute;
     top: -5px;
     right: -5px;
 
     h3 {
-        margin: 0 auto;
+        margin: 0 auto; 
     }
 
     .skillsList {
@@ -117,4 +114,11 @@
 }
 
 
-
+//change photo on hover 
+@media (hover: hover) { 
+    .projectImg {
+        img.top:hover {
+            opacity: 0;
+        }
+    }
+}

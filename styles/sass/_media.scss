@@ -1,7 +1,3 @@
-@media (hover: hover) {
-    
-}
-
 @media (max-width: 950px){
 //header section
 header{
@@ -40,7 +36,7 @@ header{
     }
 }
 
-@media (max-width: 750px){
+@media (max-width: 760px) and (hover: none) {
 //header styles
     .switch {
         font-size: 1.4rem;

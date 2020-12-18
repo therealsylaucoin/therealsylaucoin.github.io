@@ -773,10 +773,6 @@ header .menuShow li a:focus {
   transition: opacity 1s ease-in-out;
 }
 
-.projectImg img.top:hover {
-  opacity: 0;
-}
-
 .projectImg .minImg {
   display: none;
 }
@@ -786,6 +782,7 @@ header .menuShow li a:focus {
 }
 
 .details {
+  display: none;
   position: absolute;
   top: -5px;
   right: -5px;
@@ -839,6 +836,12 @@ header .menuShow li a:focus {
 
 .visible {
   display: block;
+}
+
+@media (hover: hover) {
+  .projectImg img.top:hover {
+    opacity: 0;
+  }
 }
 
 .contact {
@@ -1029,7 +1032,7 @@ footer p {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 760px) and (hover: none) {
   .switch {
     font-size: 1.4rem;
   }
