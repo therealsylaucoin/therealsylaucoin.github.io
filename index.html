@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Front End Web Developer who has a passion for helping others and accessible design.">
     <link type="image/png" href="./assets/favicon.png" rel="icon">
     <title>Syl Codes</title>
     <!-- Animation libraries -->
@@ -117,7 +118,7 @@
 
                 <p>I’m excited to step into a role within a collaborative environment where I will continue to hone my skills and keep growing as a developer. <a href="#contact">Let’s connect!</a> Je parle français, aussi!</p>
                 
-                <a href="./assets/syl-aucoin-resume.pdf" target="_blank" rel="noreferrer" download=""><button>Download my resume</button></a>
+                <a class="resume" href="./assets/syl-aucoin-resume.pdf" target="_blank" rel="noreferrer" download="">Download my resume</a>
 
             </div>
 
@@ -155,7 +156,7 @@
             <h2>Currently learning:</h2>
 
             <ul class="wrapper">
-                <li><i class="fab fa-vuejs"></i></i>Vue.js</li>
+                <li><i class="fab fa-vuejs"></i>Vue.js</li>
                 <li><i class="devicon-redux-original"></i>Redux</li>
             </ul>
 
@@ -181,7 +182,7 @@
                     <li class="project"  data-name="monster" tabIndex="0">
 
                         <!-- Div for images -->
-                        <div class="projectImg" id="crossFade">
+                        <div class="projectImg">
                             <img class="bottom"  src='./assets/portfolio/monster2.png' alt="first image for monster mash project">
                             <img class="top orgImg" src='./assets/portfolio/monster1.png' alt="first image for monster mash project">
                             <img class="top minImg" src='./assets/portfolio/monsterMin.png' alt="first image for monster mash project">
@@ -215,7 +216,7 @@
                     <li class="project" tabIndex="0" data-name="oblique">
 
                         <!-- Div for images -->
-                        <div class="projectImg" id="crossFade">
+                        <div class="projectImg">
                             <img class="bottom"  src='./assets/portfolio/oblique2.png' alt="second image for oblique strategies project">
                             <img class="top orgImg" src='./assets/portfolio/oblique1.png'  alt="first image for oblique strategies project">
                             <img class="top minImg" src='./assets/portfolio/obliqueMin.png'  alt="first image for oblique strategies project">
@@ -248,7 +249,7 @@
                     <li class="project" tabIndex="0" data-name="sport">
 
                         <!-- Div for images -->
-                        <div class="projectImg" id="crossFade">
+                        <div class="projectImg">
                             <img class="bottom"  src='./assets/portfolio/sport2.png' alt="second image for sports spot project">
                             <img class="top orgImg" src='./assets/portfolio/sport1.png'  alt="first image for sport spot project">
                             <img class="top minImg" src='./assets/portfolio/sportMin.png'  alt="first image for sport spot project">
@@ -281,7 +282,7 @@
                     <li class="project" tabIndex="0" data-name="shoe">
 
                         <!-- Div for images -->
-                        <div class="projectImg" id="crossFade">
+                        <div class="projectImg">
                             <img class="bottom"  src='./assets/portfolio/shoe2.png' alt="second image for shoe kloset project">
                             <img class="top orgImg" src='./assets/portfolio/shoe1.png'  alt="first image for shoe kloset project">
                             <img class="top minImg" src='./assets/portfolio/shoeMin.png'  alt="first image for shoe kloset project">
@@ -313,7 +314,7 @@
                     <li class="project" tabIndex="0" data-name="plant">
 
                         <!-- Div for images -->
-                        <div class="projectImg" id="crossFade">
+                        <div class="projectImg">
                             <img class="bottom"  src='./assets/portfolio/plant2.png' alt="second image for plant quiz project">
                             <img class="top orgImg" src='./assets/portfolio/plant1.png'  alt="first image for plant quiz project">
                             <img class="top minImg" src='./assets/portfolio/plantMin.png'  alt="first image for plant quiz project">
@@ -365,44 +366,62 @@
                 or send me a message here. You can also find me on social media.
                 </p>
 
-                <section class="getInTouch">
+                <div class="getInTouch">
 
                     <ul class="socialIcons">
 
                         <li>
-                            <a href="mailto:sylaucoin@gmail.com" target="_blank" rel="noreferrer"><i
-                            class="fas fa-envelope"
-                            aria-label="email"></i></a>
+                            <a href="mailto:sylaucoin@gmail.com" 
+                            aria-label="email"
+                            target="_blank" 
+                            rel="noreferrer">
+                                <i aria-hidden="true" class="fas fa-envelope"></i>
+                            </a>
                         </li>
 
                         <li>
-                            <a href="https://twitter.com/sylaucoin" target="_blank" rel="noreferrer"><i
-                            class="fab fa-twitter"
-                            aria-label="twitter"></i></a>
+                            <a href="https://twitter.com/sylaucoin" 
+                            aria-label="twitter"
+                            target="_blank" 
+                            rel="noreferrer">
+                                <i aria-hidden="true" class="fab fa-twitter" ></i>
+                            </a>
                         </li>
 
                         <li>
-                            <a href="https://www.linkedin.com/in/sylvieaucoin" target="_blank" rel="noreferrer"><i
-                            class="fab fa-linkedin-in"
-                            aria-label="linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/sylvieaucoin" 
+                            aria-label="linkedin"
+                            target="_blank" 
+                            rel="noreferrer">
+                                <i aria-hidden="true" class="fab fa-linkedin-in" ></i>
+                            </a>
                         </li>
 
                         <li>
-                            <a href="https://github.com/therealsylaucoin" target="_blank" rel="noreferrer"><i
-                            class="fab fa-github"
-                            aria-label="github"></i></a>
+                            <a href="https://github.com/therealsylaucoin" 
+                            aria-label="github" 
+                            target="_blank" 
+                            rel="noreferrer">
+                                <i aria-hidden="true" class="fab fa-github"></i>
+                            </a>
                         </li>
 
                         <li>
-                            <a href="https://www.instagram.com/sylaucoin" target="_blank" rel="noreferrer"><i
-                            class="fab fa-instagram"
-                            aria-label="instagram"></i></a>
+                            <a href="https://www.instagram.com/sylaucoin" 
+                            aria-label="instagram"
+                            target="_blank" 
+                            rel="noreferrer">
+                                <i aria-hidden="true" class="fab fa-instagram" ></i>
+                            </a>
                         </li>
 
                         <li>
-                            <a href="https://sylaucoin.medium.com/" target="_blank" rel="noreferrer"><i
-                            class="fab fa-medium-m"
-                            aria-label="medium"></i></a>
+                            <a href="https://sylaucoin.medium.com/" 
+                            aria-label="medium"
+                            target="_blank" 
+                            rel="noreferrer">
+                                <i aria-hidden="true" class="fab fa-medium-m" ></i>
+                            </a>
                         </li>
 
                     </ul>
@@ -425,7 +444,7 @@
                         <button type="submit">Send Message</button>
                     </form>
 
-                </section>
+                </div>
 
             </div>
 

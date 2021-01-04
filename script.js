@@ -99,14 +99,6 @@ app.mobileClass = () => {
     }
 }
 
-// Calendly.initInlineWidget({
-//     url: 'https://calendly.com/sylcodes?text_color=000004&primary_color=000004',
-//     parentElement: document.getElementById('calendly'),
-//     prefill: {},
-//     utm: {}
-// });
-
-
 app.init = () => {    
     AOS.init(); //initialize animations library
     app.scroll();

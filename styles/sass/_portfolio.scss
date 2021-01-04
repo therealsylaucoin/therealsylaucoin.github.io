@@ -36,16 +36,16 @@
 .intro,
 .details {
     background-color: $white;
-    border: 1px solid $black;
     padding: 20px;
 }
 
 .projectImg {
-    position:relative;
-    
     img {
         position:absolute;
         left:0;
+        right: 0;
+        top: 0;
+        bottom: 0;
         transition: opacity 1s ease-in-out;
     }
 
