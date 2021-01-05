@@ -835,12 +835,17 @@ header .menuShow li a:focus {
   padding: 20px;
 }
 
+.projectImg {
+  position: relative;
+}
+
 .projectImg img {
+  border: 1px solid hotpink;
   position: absolute;
-  left: 0;
+  top: -5px;
   right: 0;
-  top: 0;
   bottom: 0;
+  left: -5px;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
@@ -1204,10 +1209,6 @@ footer p {
   }
   .details p {
     font-size: 1.6rem;
-  }
-  .details ul {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
   .details li {
     padding: 10px;

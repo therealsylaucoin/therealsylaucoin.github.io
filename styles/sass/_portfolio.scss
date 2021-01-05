@@ -40,12 +40,16 @@
 }
 
 .projectImg {
+    position: relative;
+
+    
     img {
+        border: 1px solid hotpink;
         position:absolute;
-        left:0;
+        top: -5px;
         right: 0;
-        top: 0;
         bottom: 0;
+        left: -5px;
         transition: opacity 1s ease-in-out;
     }
 
@@ -123,3 +127,6 @@
         }
     }
 }
+
+
+
