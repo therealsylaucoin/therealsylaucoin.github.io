@@ -840,7 +840,6 @@ header .menuShow li a:focus {
 }
 
 .projectImg img {
-  border: 1px solid hotpink;
   position: absolute;
   top: -5px;
   right: 0;
