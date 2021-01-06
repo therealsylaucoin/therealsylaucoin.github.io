@@ -310,7 +310,7 @@ img {
 }
 
 .minimal .headerRight {
-  background-image: url(../assets/codeMono.png);
+  background-image: url(../assets/codeMono.jpg);
 }
 
 .minimal .headerRight button {
@@ -374,23 +374,23 @@ img {
 }
 
 .minimal .monsterImg {
-  background-image: url(../assets/portfolio/monsterMin.png);
+  background-image: url(../assets/portfolio/monsterMin.jpg);
 }
 
 .minimal .obliqueImg {
-  background-image: url(../assets/portfolio/obliqueMin.png);
+  background-image: url(../assets/portfolio/obliqueMin.jpg);
 }
 
 .minimal .sportImg {
-  background-image: url(../assets/portfolio/sportMin.png);
+  background-image: url(../assets/portfolio/sportMin.jpg);
 }
 
 .minimal .haikuImg {
-  background-image: url(../assets/portfolio/haikuMin.png);
+  background-image: url(../assets/portfolio/haikuMin.jpg);
 }
 
 .minimal .shoeImg {
-  background-image: url(../assets/portfolio/shoeMin.png);
+  background-image: url(../assets/portfolio/shoeMin.jpg);
 }
 
 .minimal .links li a:hover, .minimal .links li a:focus-within {
@@ -418,7 +418,7 @@ header .headerRight {
 header .headerLeft {
   width: 30vw;
   min-width: 550px;
-  background-image: url(../assets/headerLeftMono.png);
+  background-image: url(../assets/headerLeftMono.jpg);
   position: relative;
   background-position: right;
 }
@@ -439,7 +439,7 @@ header .headshotContainer:hover {
 
 header .headerRight {
   width: 70vw;
-  background-image: url(../assets/headerRight3.png);
+  background-image: url(../assets/headerRight3.jpg);
   position: relative;
   background-position: left;
 }
@@ -1150,7 +1150,7 @@ footer p {
     padding-top: 60px;
   }
   header .headerRight {
-    background-image: url(../assets/mobile2.png);
+    background-image: url(../assets/mobile2.jpg);
     background-position: center;
     min-height: 550px;
   }
@@ -1162,7 +1162,7 @@ footer p {
     margin: 20px 0;
   }
   .minimal header .headerRight {
-    background-image: url(../assets/mobile3.png);
+    background-image: url(../assets/mobile3.jpg);
   }
   .navBarFixed button i {
     margin: 0;
