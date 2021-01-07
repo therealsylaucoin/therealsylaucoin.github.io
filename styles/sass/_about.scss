@@ -2,8 +2,15 @@
 .about {
     background-color: #E6E6E6;
 
-    div {
-        padding-bottom: 50px;
+    .aboutContainer {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        div {
+            flex: 1;
+            padding: 15px;
+        }
     }
 
     .cursor {
@@ -46,10 +53,6 @@
 
     p {
         text-align: left;
-
-        &:last-of-type {
-            padding-bottom: 50px;
-        }
     }
 
     .title {
@@ -58,6 +61,6 @@
     }
 
     .aboutTitle {
-        margin: 50px auto;
+        margin: 50px auto 25px;
     }
 }

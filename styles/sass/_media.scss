@@ -34,6 +34,14 @@ header{
             }
         }
     }
+
+    //About
+    .aboutContainer {
+        flex-direction: column;
+    }
+    .about .aboutContainer div {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 760px) and (hover: none) {
@@ -223,9 +231,6 @@ header{
 
 
 @media(max-width: 390px) {
-    .aboutTitle{
-        height: 180px;
-    }
 
     .portfolio {
         .projectList{
